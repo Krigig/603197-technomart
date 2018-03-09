@@ -12,7 +12,9 @@
           <p class="logo">Техномарт</p>
         </a>
         
-        <!--Поиск-->
+        <form action="get" action="" class="search">
+          <input type="search" name="search" value="Поиск:" aria-label="Поиск">
+        </form>
 
         <ul class="buy">
           <li><a href="#">Закладки</a></li>
@@ -155,8 +157,54 @@
     		</div>
         <div class="filter">
           <p>Фильтр</p>
-      
-      <!--Форма-->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+            <legend>Цена:</legend>
+            <input class="price-option" id="price" name="price" type="range" min="0" max="3000" aria-label="Цена">
+            <output name="sum">0</output>
+            <output name="sum">3000</output>
+            </fieldset>
+            <fieldset>
+              <legend>Производители</legend>
+              <ul>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
+                 <label class="visually-hidden filter-input filter-input-checkbox" for="BOSCH">BOSCH</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="intels" id="intels">
+                 <label for="intels">ИНТЕРСКОЛ</label>
+               </li>
+               <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="Makita" checked>
+                <label for="Makita">Makita</label>
+                <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
+                 <label for="Dewalt">Dewalt</label>
+               </li>
+               <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
+                <label for="Hitachi">Hitachi</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>
+                Питание
+              </legend>
+              <ul>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="battery" id="battery" checked>
+                 <label class="visually-hidden filter-input ffilter-input-radio" for="battery">Аккумуляторные</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="rosette" id="rosette">
+                 <label for="rosette">Сетевые</label>
+               </li>
+             </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+          </form>
 
         </div>
     	</section>

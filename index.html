@@ -174,7 +174,8 @@
     		</div>
         <div class="write-us">
           <h2 class="visually-hidden">Напишите нам!</h2>
-          <form class="form-write-us" method="get" action="https://echo.htmlacademy.ru">
+          <form class="form-write-us" method="post" action="https://echo.htmlacademy.ru">
+            <button type="button" class="close">Закрыть</button>
             <p>
             <label for="name">Ваше имя:</label>
             <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
@@ -187,6 +188,7 @@
             <label for="text">Текст письма:</label>
             <textarea  name="text" id="text" rows="4">В свободной форме</textarea>
           </p>
+          <input  type="submit" class="send" value="Отправить" name="send" aria-label="Отправить">
           </form>
         </div>
     	</section>

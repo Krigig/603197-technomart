@@ -183,6 +183,32 @@ a {
 }
 
 .features-items a:focus{
-	background-color: rgba(0, 0, 0, 0.3);;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.topic {
+	background-color: #f9f5f0;
+}
+
+.topic h2{
+	font-size: 30px;
+    line-height: 30px;
+    color: #333366;
+    text-transform: uppercase;
+}
+
+.btn{
+	font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #ee3643;
+
+}
+.btn:hover{
+	background-color: #ca2c37;
+}
+
+.btn:focus{
+	background-color: #ba2732;
 }
 

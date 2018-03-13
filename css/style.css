@@ -56,9 +56,13 @@ a {
 	border: none;
 
 }
+.buy .search:hover{
+  background-color:#212a3a;
+}
 .buy .search:focus{
 	background-color: #fff;
 	color: #000;
+	border: none;
 }
 
 .buy a:hover{
@@ -140,4 +144,45 @@ a {
 }
 
 
+.features-items{
+	list-style: none;
+}
+.features-items h3{
+	font-size: 24px;
+    line-height: 30px;
+	color: #fff;
+
+}
+.features-items a{
+	font-size: 14px;
+    line-height: 18px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.features-items li:first-of-type{
+	background-color: #ffbf47;
+}
+
+.features-items li:nth-of-type(2){
+	background-color: #3bbce3;
+}
+.features-items li:nth-of-type(3){
+	background-color: #dc91d8;
+}
+.features-items li:nth-of-type(4){
+	background-color: #8ed78f;
+}
+.features-items li:last-of-type{
+	background-color: #ffc047;
+}
+
+.features-items a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-items a:focus{
+	background-color: rgba(0, 0, 0, 0.3);;
+}
 

@@ -212,3 +212,76 @@ a {
 	background-color: #ba2732;
 }
 
+.catalog-items li{
+	border: 1px solid #eaeaea;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	list-style: none;
+}
+
+.catalog-items h3{
+	font-size: 18px;
+	line-height: 20px;
+}
+.catalog-items del{
+	font-size: 17px;
+	line-height: 18px;
+	color: #a9a9a9;
+}
+.catalog-items a{
+
+	font-size: 17px;
+	line-height: 18px;
+	color: #fff;
+	background-color: #ee3643;
+}
+
+.catalog-items li:hover{
+	box-shadow: 0 10px 25px 0px rgba(0,0,0, 0.5);
+
+
+}
+.catalog-items img:hover{
+	opacity: 0;
+}
+ .user-menu a{
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	
+}
+.user-menu a:first-child{
+	background-color: #63a63e;
+	color: #fff;
+}
+ .user-menu a:first-child:hover{
+	background-color: #5fbb2d;
+}
+ .user-menu a:first-child:focus{
+	background-color: #518534;
+}
+
+.user-menu a:last-child{
+	background-color: #fff;
+	border: 3px solid #669933;
+	color: #32425c;
+}
+.user-menu a:last-child:hover{
+	border: 3px solid #32425c;
+}
+.user-menu a:last-child:focus{
+	opacity: 0.3;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}

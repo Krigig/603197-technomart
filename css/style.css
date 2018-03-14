@@ -197,13 +197,7 @@ a {
     text-transform: uppercase;
 }
 
-.btn{
-	font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    background-color: #ee3643;
 
-}
 .btn:hover{
 	background-color: #ca2c37;
 }
@@ -406,6 +400,33 @@ a {
 
 }
 
+.form-write-us label{
+	font-size: 18px;
+	line-height: 18px;
+}
+.form-write-us p>input,
+.form-write-us textarea {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #999999;
+	border: 2px solid #d7dcde;
+}
+.form-write-us{
+	box-shadow: inset 0 15px 0 0 #ee3643;
+}
+.form-write-us p>input:hover,
+.form-write-us textarea:hover{
+	border: 2px solid #b5b5b5;
+}
+
+.form-write-us p>input:focus,
+.form-write-us textarea:focus{
+	border: 2px solid #ee3643;
+}
+.form-write-us .send{
+	background-color: #f1f1f1;
+}
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;
@@ -415,4 +436,11 @@ a {
 	margin: -1px;
 	padding: 0;
 	border: 0;
+}
+.btn{
+	font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #ee3643;
+
 }

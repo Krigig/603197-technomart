@@ -328,6 +328,84 @@ a {
 	line-height: 20px;
 }
 
+
+
+.main-footer .logo{
+	background-color: #ee3643;
+}
+.main-footer a{
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.main-footer p{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.main-footer,
+.footer-navigation {
+	background-color: #32425c;
+}
+
+.footer-navigation ul{
+	list-style: none;
+}
+.footer-navigation a{
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	
+}
+
+.bottom-navigation a{
+	color: #fff;
+}
+
+.catalog-navigation a{
+	color: #ffd180;
+}
+
+.footer-navigation a:hover{
+	text-decoration: underline;
+}
+
+.footer-navigation a:focus{
+	opacity: 0.5;
+	text-decoration: none;
+
+}
+
+.footer-social,
+.footer-copyright {
+	background-color: #293449;
+}
+
+.footer-social,
+.footer-copyright {
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+}
+.footer-social ul,
+.footer-copyright ul{
+	list-style: none;
+}
+.footer-copyright a{
+	color:#ffd180;
+}
+.footer-copyright a:hover{
+	text-decoration: underline;
+}
+
+.footer-copyright a:focus{
+	color: #ee3643;
+	text-decoration: none;
+
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;

@@ -8,7 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
     	<div class="top-header">
         <p class="main-header-logo">
@@ -21,7 +21,7 @@
         </form>
       </li>
           <li><a href="#">Закладки</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li><a href="#" class="corf">Корзина:10</a></li>
           <li class="checkout"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
             <a href="personal.html">Равшан Джамшутович</a>
             <a href="out.html"> Выйти</a>
           </div>
-           <ul class="user-navigation">
+           <ul class="user-nav">
               <li class="orders"><a href="#"> Мои заказы</a></li>
                  <li class="room"><a href="#">Личный кабинет</a></li>
           </ul>
@@ -67,56 +67,58 @@
          <a href="#"> Инструмент</a>
          <a>Перфораторы</a>
       </div>
+      <div class="topic-catalog">
     		<h2>Перфораторы</h2>
-         <div class="filter">
-          <p>Фильтр</p>
+      </div>
+         <div class="main-filter">
+          <p>Фильтр:</p>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="price-option">
             <legend>Цена:</legend>
-            <input class="price-option" id="price" name="price" type="range" min="0" max="3000" aria-label="Цена">
+            <input  id="price" name="price" type="range" min="0" max="3000" aria-label="Цена">
             <input type="text" name="price-min" aria-label="Минимальная цена" value="0">
             <input type="text" name="price-max" aria-label="Максимальная цена цена" value="3000">
              </fieldset>
-            <fieldset>
-              <legend>Производители</legend>
+            <fieldset class="filter-brands">
+              <legend>Производители:</legend>
               <ul>
-               <li class="filter-option">
-                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
-                 <label class="visually-hidden filter-input filter-input-checkbox" for="BOSCH">BOSCH</label>
+               <li>
+                 <input class="visually-hidden" type="checkbox" name="BOSCH" id="BOSCH" checked>
+                 <label for="BOSCH">BOSCH</label>
                </li>
-               <li class="filter-option">
-                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="intels" id="intels">
+               <li >
+                 <input class="visually-hidden" type="checkbox" name="intels" id="intels">
                  <label for="intels">ИНТЕРСКОЛ</label>
                </li>
                <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="Makita" checked>
+                <input class="visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
                 <label for="Makita">Makita</label>
-                <li class="filter-option">
-                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
+                <li>
+                 <input class="visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
                  <label for="Dewalt">Dewalt</label>
                </li>
-               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
+               <li>
+                <input class="visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
                 <label for="Hitachi">Hitachi</label>
               </li>
             </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="work-option">
               <legend>
-                Питание
+                Питание:
               </legend>
               <ul>
-               <li class="filter-option">
-                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="work" id="battery" value="battery" checked>
-                 <label class="visually-hidden filter-input ffilter-input-radio" for="battery" >Аккумуляторные</label>
+               <li>
+                 <input class="visually-hidden" type="radio" name="work" id="battery" value="battery" checked>
+                 <label for="battery" >Аккумуляторные</label>
                </li>
-               <li class="filter-option">
-                 <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="work" id="rosette" value="rosette">
+               <li>
+                 <input class="visually-hidden" type="radio" name="work" id="rosette" value="rosette">
                  <label for="rosette">Сетевые</label>
                </li>
              </ul>
             </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
+            <button type="submit" class="filter-button">Показать</button>
           </form>
 
         </div>
@@ -138,69 +140,87 @@
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <del>22500Р.</del>
               <a href="#">15500Р.</a>
-              <a href="#">Купить</a>
+              <div class="user-menu visually-hidden">
+               <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-3.jpg" alt="BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <del>30500Р.</del>
               <a href="#">25500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-4.jpg" alt="BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <a href="#">12500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
     				<li>
               <img src="img/main/item-2.jpg"  alt="BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <del>22500Р.</del>
               <a href="#">15500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-3.jpg" alt="BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <del>30500Р.</del>
               <a href="#">25500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-4.jpg" alt="BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <a href="#">12500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
     				<li>
               <img src="img/main/item-2.jpg" alt="BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <del>22500Р.</del>
               <a href="#">15500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-3.jpg" alt="BOSCH BFG 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <del>30500Р.</del>
               <a href="#">25500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
             <li>
               <img src="img/main/item-4.jpg" alt="BOSCH BFG 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <a href="#">12500Р.</a>
+               <div class="user-menu visually-hidden">
                <a href="#">Купить</a>
               <a href="#">В закладки</a>
+            </div>
             </li>
     			</ul>
           <div class="paginator">

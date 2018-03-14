@@ -234,9 +234,7 @@ a {
 .catalog-items li:hover{
 	box-shadow: 0 10px 25px 0px rgba(0,0,0, 0.5);
 }
-.catalog-items img:hover{
-	opacity: 0;
-}
+
  .user-menu a{
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
@@ -442,5 +440,116 @@ a {
     line-height: 18px;
     color: #fff;
     background-color: #ee3643;
+    text-transform: uppercase;
+}
 
+.inner-page .corf{
+	background-color: #ee3643;
+}
+
+.user a{
+	font-size: 21px;
+    line-height: 21px;
+    color: #000;
+}
+.user {
+	background-color: #fff;
+}
+.user a:focus{
+	opacity: 0.3;
+}
+
+.check .user-nav{
+	font-size: 16px;
+    line-height: 18px;
+	list-style: none;
+	text-decoration: underline;
+	color: #32425c;
+
+}
+.user-nav a:hover{
+	color: #ee3643;
+
+}
+
+.catalog-nav a{
+	font-size: 13px;
+    line-height: 18px;
+    color: #000;
+}
+.catalog .topic-catalog{
+    background-color: #f2f6f8; 
+}
+.catalog h2{
+	font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+.main-filter p,
+.sorting p{
+	font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", Arial, sans-serif; 
+    text-transform: uppercase;
+   
+}
+.sorting{
+	background-color: #f7f3ec;
+}
+.main-filter p{
+	background-color: #f7f3ec;
+}
+.filter fieldset {
+  border: none;
+}
+.filter ul {
+  list-style: none;
+}
+
+.filter legend{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price-option input{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 17px;
+    line-height: 18px;
+    background-color: #f7f3ec;
+
+}
+.filter-brands label,
+.work-option label {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.filter .filter-button{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+    line-height: 18px;
+}
+ .sorting a{
+ 	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    border-bottom: 2px dotted #ee3643;
+    opacity: 0.3;
+}
+
+.sorting a:hover{
+	opacity: 1;
+	border-bottom: 2px solid #ee3643;
+}
+
+.sorting a:focus{
+	opacity: 1;
+	border-bottom: none;
+	color: #ee3643;
 }

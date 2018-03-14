@@ -553,3 +553,37 @@ a {
 	border-bottom: none;
 	color: #ee3643;
 }
+.paginator a{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+.paginator a:hover{
+	border: 1px solid #bdc6ca;
+}
+.paginator a:focus{
+	border: 1px solid #ee3643;
+}
+
+.paginator a:active{
+	color: #fff;
+	background-color: #ee3643;
+}
+.product{
+	background-color: #f2f6f8;
+}
+.product h2{
+	font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.product p{
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+    line-height: 24px;
+}
+

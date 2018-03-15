@@ -90,7 +90,7 @@ a {
 	font-size: 16px;
     line-height: 23px;
     background-color: #f3f7f9;
-	color: #ff3333;
+	color: #ee3643;
 }
 
 .bottom-header .promo{
@@ -161,20 +161,20 @@ a {
 	text-transform: uppercase;
 }
 
-.features-items li:first-of-type{
+.features-items .material{
 	background-color: #ffbf47;
 }
 
-.features-items li:nth-of-type(2){
+.features-items .tool{
 	background-color: #3bbce3;
 }
-.features-items li:nth-of-type(3){
+.features-items .technique{
 	background-color: #dc91d8;
 }
-.features-items li:nth-of-type(4){
+.features-items .sale{
 	background-color: #8ed78f;
 }
-.features-items li:last-of-type{
+.features-items .delivery{
 	background-color: #ffc047;
 }
 
@@ -195,6 +195,7 @@ a {
     line-height: 30px;
     color: #333366;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 
@@ -291,6 +292,7 @@ a {
 .service h2{
 	font-size: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 .service p{
 	font-family: "PT Sans", Arial, sans-serif;
@@ -302,11 +304,13 @@ a {
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
+	text-transform: uppercase;
 }
 
 .about h2{
 	font-size: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 .about p{
 	font-family: "PT Sans", Arial, sans-serif;

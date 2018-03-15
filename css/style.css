@@ -269,18 +269,18 @@ a {
 .brands-items li{
 	list-style: none;
 }
-.brands-items a{
+.brands-items .popular-brands{
 	border: 1px solid #eaeaea;
 }
 
-.brands-items a:hover{
+.brands-items .popular-brands:hover{
 	box-shadow: 0 10px 25px 0px rgba(0,0,0, 0.5);
 }
 
-.brands-items a:focus{
+.brands-items .popular-brands:focus{
 	box-shadow: 0 4px 10px 0px rgba(0,0,0, 0.5);
 }
-.brands-items a:focus{
+.brands-items .popular-brands:focus{
 	opacity: 0.3;
 }
 

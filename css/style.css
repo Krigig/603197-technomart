@@ -12,26 +12,39 @@ a {
   text-decoration: none;
 }
 
+.top-header-main{
+	background-color: #293449;
+	min-height: 42px;
+	width: 100%;
+	
+}
+.container{
+	margin:0 auto;
+	padding: 0 10px;
+	width: 940px;
+}
 .top-header {
+	display: flex;
+	min-height: 42px;
 	background-color: #293449;
 }
 
-.main-header-logo{
-	background-color: #ee3643;
-	width: 220px;
-	height: 47px;
-}
 .main-header-logo a{
+	margin: 0;
+	padding: 14px 55px 20px;
+	box-shadow: inset 0 2px 0 0 #ea515c,
+				inset 0 -8px 0 0 #9f0617;
+	background-color: #ee3643;
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #fff;
 }
 
-.main-header-logo:hover{
+.main-header-logo a:hover{
 	background-color: #ca2c37;
 }
-.main-header-logo:focus {
+.main-header-logo a:focus {
   background-color: #ba2732;
 }
 
@@ -41,20 +54,31 @@ a {
   list-style: none;
 }
 
+.buy{
+	margin:0;
+}
+
+
+.buy li{
+	display: inline-block;
+}
 .buy a{
+	margin: 0;
+	padding: 13px 30px 15px;
 	font-size: 17px;
     line-height: 18px;
 	color: #fff;
 }
 .search{
-	width: 170px;
-	height: 43px;
+	padding: 0;
+	margin: 0;
+	width: 270px;
+	height: 42px;
 	font-size: 17px;
     line-height: 18px;
 	color: #fff;
 	background-color: #293449;
 	border: none;
-
 }
 .buy .search:hover{
   background-color:#212a3a;
@@ -85,8 +109,15 @@ a {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: #518534;
 }
-
+.bottom-header-main{
+	background-color: #f3f7f9;
+	width: 100%;
+}
 .bottom-header{
+	margin:0 auto;
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
 	font-size: 16px;
     line-height: 23px;
     background-color: #f3f7f9;
@@ -94,19 +125,40 @@ a {
 }
 
 .bottom-header .promo{
+	padding-left: 52px;
+	padding-top: 52px;
+	margin-bottom: 47px;
+	vertical-align: middle;
+	width: 207px;
 	font-style: italic;
 	text-align: left;
 }
 
 .bottom-header .phone{
+	margin: 0;
+	margin-top: 46px;
+	margin-bottom: 10px;
+	padding: 13px 42px 12px 71px;
+	border:3px solid #fff;
 	font-size: 21px;
     line-height: 21px;
 }
 
 .bottom-header .adress{
+	margin:0;
+	margin-bottom: 47px;
 	font-size: 14px;
     line-height: 24px;
     color: #32425c;
+}
+.user-navigation li{
+	display: inline-block;
+	margin-top: 46px;
+	margin-right: 10px;
+}
+.user-navigation li:last-child{
+	margin:0;
+	margin-top: 46px;
 }
 
 .user-navigation a{
@@ -114,6 +166,12 @@ a {
     line-height: 21px;
     color: #000;
     background-color: #fff;
+}
+.user-navigation .login-link{
+	padding: 14px 27px 16px 48px;
+	}
+.user-navigation .check-in{
+	padding: 14px 25px 11px 25px;
 }
 
 .user-navigation a:hover{
@@ -124,9 +182,20 @@ a {
 	color: rgba(0, 0, 0, .3);
 }
 
+.main-navigation{
+	width: 100%;
+	background-color: #f3f7f9;	
+}
 .main-navigation .site-navigation{
+	margin: 0 auto;
 	background-color: #32425c;
+	width: 940px;
+	min-height: 61px;
+	box-shadow: inset 0 -5px 0 0 #293449;
 
+}
+.site-navigation li{
+	display: inline-block;
 }
 .site-navigation a{
 	font-size: 17px;
@@ -145,7 +214,17 @@ a {
 
 
 .features-items{
+	margin: 0 auto;
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.features-items li{
+	box-sizing: border-box;
+	width: 300px;
+	min-height: 123px;
+	
 }
 .features-items h3{
 	font-size: 24px;
@@ -154,6 +233,7 @@ a {
 
 }
 .features-items a{
+
 	font-size: 14px;
     line-height: 18px;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -164,18 +244,34 @@ a {
 .features-items .material{
 	background-color: #ffbf47;
 }
+.material a{
+	padding: 14px 24px 14px;
+}
 
 .features-items .tool{
 	background-color: #3bbce3;
 }
+.tool a{
+	padding: 14px 27px 14px 26px;
+}
+
 .features-items .technique{
 	background-color: #dc91d8;
+}
+.technique a{
+	padding: 14px 31px 12px 30px;
 }
 .features-items .sale{
 	background-color: #8ed78f;
 }
+.sale a{
+	padding: 14px 23px;
+}
 .features-items .delivery{
-	background-color: #ffc047;
+		background-color: #ffc047;
+}
+.delivery a{
+	padding: 14px 37px; 
 }
 
 .features-items a:hover{

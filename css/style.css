@@ -192,6 +192,9 @@ a {
 	background-color: #f3f7f9;	
 }
 .main-navigation .site-navigation{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #32425c;
@@ -200,10 +203,9 @@ a {
 	box-shadow: inset 0 -5px 0 0 #293449;
 
 }
-.site-navigation li{
-	display: inline-block;
-}
+
 .site-navigation a{
+	
 	font-size: 17px;
     line-height: 17px;
     color: #fff; 
@@ -649,6 +651,7 @@ a {
     background-color: #ee3643;
     text-transform: uppercase;
 }
+/* стили для каталога */
 
 .inner-page .corf{
 	background-color: #ee3643;
@@ -665,18 +668,35 @@ a {
 .user a:focus{
 	opacity: 0.3;
 }
-
+.check{
+	margin-top: 46px;
+}
+.check .user{
+	display: inline-block;
+	width: 299px;
+	height: 50px;
+}
 .check .user-nav{
+	display: flex;
+	justify-content: space-between;
+	width: 212px;
+	margin-left: 17px;
+	margin-top: 10px;
+	list-style: none;
+
+}
+.user-nav a{
 	font-size: 16px;
     line-height: 18px;
-	list-style: none;
 	text-decoration: underline;
 	color: #32425c;
-
 }
 .user-nav a:hover{
 	color: #ee3643;
 
+}
+.user-nav a:visited{
+	color: #32425c;
 }
 
 .catalog-nav a{

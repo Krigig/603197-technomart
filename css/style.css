@@ -477,40 +477,72 @@ a {
 .contacts img{
 	margin-bottom: 40px;
 }
-.main-footer .logo{
-	background-color: #ee3643;
+.main-footer-wrapper{
+	width: 100%;
+	background-color: #32425c;
+
 }
-.main-footer a{
+.main-footer{
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 193px;
+	justify-content: space-between;
+
+}
+.main-footer .logo{
+	order: -2;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 221px;
+	min-height: 61px;
+	text-align: center;
+	box-shadow: inset 0 2px 0 0 #ea515c,
+				inset 0 -8px 0 0 #9f0617;
+	background-color: #ee3643;
+	
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #fff;
 }
-.main-footer p{
+.main-footer .adress-phone {
+	width: 327px;
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
 }
 
-.main-footer,
-.footer-navigation {
-	background-color: #32425c;
+
+.main-footer .footer-navigation {
+	margin: 0;
+	padding: 0;
+	padding-top: 0;
+	margin-top: 42px;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+..footer-navigation li{
+	padding: 0;
 }
 
-.footer-navigation ul{
-	list-style: none;
-}
 .footer-navigation a{
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
 	
 }
-
+.main-footer .bottom-navigation {
+	order: -1;
+	width: 548px;
+}
 .bottom-navigation a{
 	color: #fff;
 }
-
+.main-footer .catalog-navigation{
+	width: 525px;
+}
 .catalog-navigation a{
 	color: #ffd180;
 }
@@ -525,20 +557,40 @@ a {
 
 }
 
-.footer-social,
-.footer-copyright {
+.bottom-footer-wrapper{
+	width: 100%;
 	background-color: #293449;
 }
-
-.footer-social,
-.footer-copyright {
+.bottom-footer{
+	display: flex;
+	justify-content: space-between;
+	
+	padding-top: 37px;
+	padding-bottom: 32px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
 }
-.footer-social ul,
-.footer-copyright ul{
+.footer-social{
+	display: flex;
+	width: 134px;
+	justify-content: space-between;
+}
+.footer-social,
+.footer-copyright{
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+.footer-social li,
+.footer-copyright li{
+	margin: 0;
+	padding: 0;
+	}
+.footer-copyright{
+	display: flex;
+	width: 287px;
+	justify-content: space-between;
 }
 .footer-copyright a{
 	color:#ffd180;

@@ -56,6 +56,7 @@ a {
 
 .buy{
 	margin:0;
+	padding: 0;
 }
 
 
@@ -151,6 +152,10 @@ a {
     line-height: 24px;
     color: #32425c;
 }
+.user-navigation ul{
+	margin:0;
+	padding: 0;
+}
 .user-navigation li{
 	display: inline-block;
 	margin-top: 46px;
@@ -188,6 +193,7 @@ a {
 }
 .main-navigation .site-navigation{
 	margin: 0 auto;
+	padding: 0;
 	background-color: #32425c;
 	width: 940px;
 	min-height: 61px;
@@ -214,26 +220,31 @@ a {
 
 
 .features-items{
-	margin: 0 auto;
+	margin:0;
+	padding:0;
+	margin-top: 59px;
+	margin-bottom: 53px; 
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
 .features-items li{
-	box-sizing: border-box;
+	margin-bottom: 20px;
 	width: 300px;
 	min-height: 123px;
-	
+
+
 }
 .features-items h3{
+	padding-left: 23px;
 	font-size: 24px;
     line-height: 30px;
 	color: #fff;
 
 }
 .features-items a{
-
 	font-size: 14px;
     line-height: 18px;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -302,13 +313,22 @@ a {
 .btn:focus{
 	background-color: #ba2732;
 }
-
+.catalog-items ul{
+	padding:0px;
+	display: flex;
+	justify-content: space-between;
+}
 .catalog-items li{
+	width: 219px;
+	min-height: 318px;
 	border: 1px solid #eaeaea;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
 	color: #000000;
 	list-style: none;
+	text-align: center;
+	
+
 }
 
 .catalog-items h3{
@@ -316,11 +336,15 @@ a {
 	line-height: 20px;
 }
 .catalog-items del{
+	text-align: center;
 	font-size: 17px;
 	line-height: 18px;
 	color: #a9a9a9;
 }
 .catalog-items .new-price{
+	width: 122px;
+	min-height: 38px;
+	text-align: center;
 
 	font-size: 17px;
 	line-height: 18px;
@@ -361,11 +385,24 @@ a {
 .user-menu a:last-child:focus{
 	opacity: 0.3;
 }
-
+.brands-items ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	margin:0;
+	padding: 0;
+	margin-bottom: 85px;
+}
 .brands-items li{
 	list-style: none;
+	margin-top: 20px;
 }
+
 .brands-items .popular-brands{
+	display: inline-block;
+	width: 220px;
+	min-height: 123px;
 	border: 1px solid #eaeaea;
 }
 

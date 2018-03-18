@@ -62,17 +62,21 @@
     </header>
     <main>
     <section class="catalog">
-      <div class="catalog-nav">
+      <div class="catalog-nav container">
          <a href="index.html"> Главная</a>
          <a href="#">Каталог</a>
          <a href="#"> Инструмент</a>
          <a>Перфораторы</a>
       </div>
-      <div class="topic-catalog">
+      <div class="topic-catalog container">
     		<h2>Перфораторы</h2>
       </div>
-         <div class="main-filter">
+      <div class="catalog-main-site container">
+         
+          <div class="container-filter">
+          <div class="name-main-filter">
           <p>Фильтр:</p>
+        </div>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="price-option">
             <legend>Цена:</legend>
@@ -121,10 +125,9 @@
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
           </form>
-
         </div>
 
-    		<div class="catalog-items">
+        <div class="container-catalog-items">
           <div class="sorting">
             <p>Сортировка</p>
             <a href="#">по цене</a>
@@ -132,10 +135,10 @@
             <a href="#">по функционалу</a>
             <a href="#">по убыванию</a>
             <a href="#">по возрастанию</a>
-
           </div>
 
-    			<ul>
+          <div class="catalog-items-group">
+    			<ul class="catalog-items container">
     				<li>
               <img src="img/main/item-2.jpg" alt="BOSCH BFG 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -224,6 +227,7 @@
             </div>
             </li>
     			</ul>
+        </div>
           <div class="paginator">
             <ul>
              <li><a href="#1" class="active">1</a></li>
@@ -233,7 +237,7 @@
             </ul>
             </div>
     		</div>
-        <div class="basket">
+        <div class="basket visually-hidden">
           <h2 class="visually-hidden">Добавление товара в корзину</h2>
           <button type="button" class="close">Закрыть</button>
           <p>Товар добавлен в корзину!</p>
@@ -242,6 +246,7 @@
             <li><button type="button">Продолжить покупки</button></li>
           </ul>
         </div>
+      </div>
 
     	</section>
       

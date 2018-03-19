@@ -700,15 +700,24 @@ a {
 }
 
 .catalog-nav a{
+	display: inline-block;
+	padding-right: 39px;
+	padding-top: 24px;
+
 	font-size: 13px;
     line-height: 18px;
     color: #000;
     text-transform: uppercase;
 }
 .catalog .topic-catalog{
+	min-height: 89px;
     background-color: #f2f6f8; 
 }
 .catalog h2{
+	padding-left:30px;
+	padding-top: 30px;
+	padding-bottom: 33px;
+
 	font-size: 30px;
     line-height: 30px;
     color: #32425c;
@@ -717,8 +726,13 @@ a {
 .container-filter{
 	width: 221px;
 }
+
 .name-main-filter p,
 .sorting p{
+	
+	padding-left: 18px;
+	margin: 0px;
+	vertical-align: middle;
 
 	font-size: 13px;
     line-height: 18px;
@@ -727,11 +741,35 @@ a {
    
 }
 .name-main-filter{
+	width: 220px;
+	min-height: 38px;
 	background-color:#f7f3ec; 
 }
-.sorting{
+
+
+.header-sorting{
+	min-height: 38px;
 	background-color: #f7f3ec;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+ .sorting-items a{
+ 	margin: 0px;
+	padding: 0px;
+ 	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+    text-transform: uppercase;
+    color: #000;
+    border-bottom: 2px dotted #ee3643;
+    opacity: 0.3;
+}
+
+.sorting-items a:hover{
+	opacity: 1;
+	border-bottom: 2px solid #ee3643;
+}
+
 .catalog-main-site{
 	display: flex;
 	justify-content: space-between;
@@ -741,6 +779,7 @@ a {
 }
 .catalog-items-group .catalog-items{
 	width: 700px;
+	margin-top:20px;
 	padding:0px;
 	display: flex;
 	flex-wrap: wrap;
@@ -781,43 +820,40 @@ a {
 	font-size: 13px;
     line-height: 18px;
 }
-.sorting{
-	margin: 0px;
-	padding: 0px;
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
-}
- .sorting a{
- 	margin: 0px;
-	padding: 0px;
- 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-    text-transform: uppercase;
-    color: #000;
-    border-bottom: 2px dotted #ee3643;
-    opacity: 0.3;
-}
-
-.sorting a:hover{
-	opacity: 1;
-	border-bottom: 2px solid #ee3643;
-}
 
 .sorting a:focus{
 	opacity: 1;
 	border-bottom: none;
 	color: #ee3643;
 }
+.paginator ul{
+	list-style: none;
+	display: flex;
+	width: 285px;
+	justify-content: space-between;
+	margin:0;
+	padding: 0;
+	margin-top: 52px;
+}
+
 .paginator a{
+	display: inline-block;
+	width: 39px;
+	min-height: 39px;
+
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
     line-height: 18px;
+
+
     color: #000000;
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
 }
-
+.paginator .next{
+	width: 138px;
+}
 .paginator a:hover{
 	border: 1px solid #bdc6ca;
 }

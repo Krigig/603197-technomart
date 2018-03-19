@@ -865,10 +865,17 @@ a {
 	color: #fff;
 	background-color: #ee3643;
 }
-.product{
+.product-wrapper{
 	background-color: #f2f6f8;
 }
+.product{
+	margin-top:60px;
+	padding-top: 65px;
+	padding-bottom: 71px;
+}
 .product h2{
+	margin:0;
+	padding-bottom: 33px;
 	font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;

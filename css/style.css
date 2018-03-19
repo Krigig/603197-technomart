@@ -296,15 +296,25 @@ a {
 }
 
 .topic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #f9f5f0;
 }
 
 .topic h2{
+	padding-left: 31px;
 	font-size: 30px;
     line-height: 30px;
     color: #333366;
     text-transform: uppercase;
     font-weight: normal;
+}
+.topic a{
+	margin-right: 24px;
+	display: inline-block;
+	width: 253px;
+	min-height: 38px;
 }
 
 

@@ -380,7 +380,9 @@ a {
 	background-color: #1d2739;
 	color: rgba( 255, 255, 255, .5);
 }
-
+.features{
+	position: relative;
+}
 
 .features-items{
 	margin:0;
@@ -388,64 +390,156 @@ a {
 	margin-top: 59px;
 	margin-bottom: 53px; 
 	list-style: none;
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
 }
 
 .features-items li{
 	margin-bottom: 20px;
 	width: 300px;
 	min-height: 123px;
-
-
 }
 .features-items h3{
+	padding: 0;
+	margin:0;
 	padding-left: 23px;
+	padding-top: 22px;
+
 	font-size: 24px;
     line-height: 30px;
 	color: #fff;
-
 }
 .features-items a{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 24px;
+	margin-top: 12px;
+	
+
 	font-size: 14px;
     line-height: 18px;
 	background-color: rgba(0, 0, 0, 0.1);
 	color: #fff;
 	text-transform: uppercase;
+	border-radius: 5px;
+
 }
 
 .features-items .material{
 	background-color: #ffbf47;
+	position: relative;
+}
+.features-items .material::after{
+  content: "";
+  
+  position: absolute;
+  top: 32px;
+  right: 40px;
+
+  width: 50px;
+  height: 69px;
+
+  background-image: url("../img/svg/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .material a{
-	padding: 14px 24px 14px;
+	padding: 10px 24px;
 }
 
 .features-items .tool{
 	background-color: #3bbce3;
+	position: relative;
+}
+
+.features-items .tool::after{
+  content: "";
+  
+  position: absolute;
+  top: 32px;
+  right: 26px;
+
+  width: 79px;
+  height: 66px;
+
+  background-image: url("../img/svg/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 .tool a{
-	padding: 14px 27px 14px 26px;
+	padding: 10px 27px 10px 26px;
 }
 
 .features-items .technique{
 	background-color: #dc91d8;
+	position: relative;
+}
+.features-items .technique::after{
+  content: "";
+  
+  position: absolute;
+  top: 30px;
+  right: 29px;
+
+  width: 79px;
+  height: 66px;
+
+  background-image: url("../img/svg/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 .technique a{
-	padding: 14px 31px 12px 30px;
+	padding: 10px 31px 10px 30px;
 }
 .features-items .sale{
 	background-color: #8ed78f;
+	position: relative;
+}
+.features-items .sale::after{
+  content: "";
+  
+  position: absolute;
+  top: 26px;
+  right: 36px;
+
+  width: 68px;
+  height: 74px;
+
+  background-image: url("../img/svg/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 .sale a{
-	padding: 14px 23px;
+	padding: 10px 23px;
 }
 .features-items .delivery{
 		background-color: #ffc047;
+		position: relative;
+}
+.features-items .delivery::after{
+  content: "";
+  
+  position: absolute;
+  top: 32px;
+  right: 30px;
+
+  width: 81px;
+  height: 65px;
+
+  background-image: url("../img/svg/icon-5.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 .delivery a{
-	padding: 14px 37px; 
+	padding: 10px 37px; 
 }
 
 .features-items a:hover{
@@ -455,6 +549,73 @@ a {
 .features-items a:focus{
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+.features-items .slider-place{
+	width: 620px;
+	min-height: 266px;
+	background-color: grey;
+}
+ .slider {
+	width: 620px;
+    position: absolute;
+
+    top: 138px;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides {
+    width: 200%;
+    transition: transform 0.8s ease;
+}
+
+.slider-slides img {
+    float: left;
+    width: 620px;
+    height: 266px;
+}
+.slider-controls {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.slider-controls label {
+    
+    width: 10px;
+    height: 10px;
+
+    position: absolute;
+    top: 220px;
+    z-index: 10;
+
+    margin: 0 3px;
+    
+    background-color: #fff;
+    border: 4px solid white;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"]{
+    background-color: #ee3643;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-620px);
+}
+
 
 .topic {
 	display: flex;

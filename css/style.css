@@ -876,20 +876,20 @@ form:focus::before{
 	width: 280px;
 }
 
-#btn-1:checked ~ .service-item label[for="btn-1"],
-#btn-2:checked ~ .service-item label[for="btn-2"],
-#btn-3:checked ~ .service-item label[for="btn-3"] {
+#srv-1:checked ~ .service-item label[for="srv-1"],
+#srv-2:checked ~ .service-item label[for="srv-2"],
+#srv-3:checked ~ .service-item label[for="srv-3"] {
     background-color: #fff;
     color: #32425c;
 }
 
-#btn-1:checked ~ .rows .about-service {
+#srv-1:checked ~ .rows .about-service {
     transform: translate(0);
 }
-#btn-2:checked ~ .rows .about-service {
+#srv-2:checked ~ .rows .about-service {
     transform: translate(-620px);
 }
-#btn-3:checked ~ .rows .about-service {
+#srv-3:checked ~ .rows .about-service {
     transform: translate(-1240px);
 }
 
@@ -1207,7 +1207,9 @@ form:focus::before{
     line-height: 18px;
     color: #000;
     text-transform: uppercase;
+    position: relative;
 }
+
 .catalog .topic-catalog{
 	min-height: 89px;
     background-color: #f2f6f8; 
@@ -1222,6 +1224,22 @@ form:focus::before{
     color: #32425c;
     text-transform: uppercase;
 }
+.catalog-nav a::after{
+  content: "";
+  
+  position: absolute;
+  left: 70px;
+  
+
+  width: 10px;
+  height: 14px;
+
+  background-image: url("../img/svg/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ 
+}
+
 .container-filter{
 	width: 221px;
 }

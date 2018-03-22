@@ -898,13 +898,14 @@ form:focus::before{
 
 
 .about{
-	margin-top: 83px;
+	margin-top: 80px;
 	margin-bottom: 86px;
 	display: flex;
 	justify-content: space-between;
 }
 .about h2{
-	margin-bottom: 38px;
+	margin:0;
+	margin-bottom: 28px;
 	
 	font-size: 30px;
 	line-height: 30px;
@@ -912,7 +913,8 @@ form:focus::before{
 	font-weight: normal;
 }
 .about p{
-	margin-bottom: 36px;
+	margin: 0;
+	margin-bottom: 25px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -921,9 +923,16 @@ form:focus::before{
 	width: 526px;
 }
 .aboutus .exemple{
-	margin-bottom: 26px;
+	margin-bottom: 20px;
+}
+.aboutus ul{
+	margin: 0;
+	padding: 0;
+	padding-left: 37px;
 }
 .aboutus li{
+	margin: 0;
+	padding: 0;
 	margin-bottom: 22px;
 	list-style: none;
 	font-size: 18px;

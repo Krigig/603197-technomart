@@ -659,7 +659,7 @@ form:focus::before{
 }
 
 
-.catalog-items ul{
+.catalog-items {
 	margin: 0;
 	margin-top: 20px;
 	padding:0px;
@@ -796,11 +796,16 @@ form:focus::before{
 	opacity: 0.3;
 }
 
-.service{
 
+.service-wrapper {
+	width: 100%;
 	background-color: #f4f8f9;
 }
 .service h2{
+	margin:0;
+	padding:0;
+	padding-top: 64px;
+	padding-bottom: 30px;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -811,12 +816,80 @@ form:focus::before{
 	line-height: 24px;
 }
 
+.services{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 70px;
+}
+
+.services input[type=radio] {
+    display: none;
+}
+
+.service-item {
+	margin: 0;
+	padding: 0;
+	margin-right: 80px;
+	list-style: none;
+}
+.service-item label{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 240px;
+	min-height: 60px;
+	padding-left: 22px;
+	padding-top: 16px;
+
+
+	background-color: #32425c;
+	color: #fff;
+	border-bottom: 1px solid #778293;
+}
+.rows{
+ 	overflow: hidden;
+}
+.about-service{
+	width: 300%;
+    transition: transform 0.8s ease;
+}
+.about-service div{
+	float: left;
+	width: 620px;
+	min-height: 284px;
+}
 .about-service h3{
+	margin: 0;
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
 	text-transform: uppercase;
 }
+.about-service p{
+	width: 280px;
+}
+
+#btn-1:checked ~ .service-item label[for="btn-1"],
+#btn-2:checked ~ .service-item label[for="btn-2"],
+#btn-3:checked ~ .service-item label[for="btn-3"] {
+    background-color: #fff;
+    color: #32425c;
+}
+
+#btn-1:checked ~ .rows .about-service {
+    transform: translate(0);
+}
+#btn-2:checked ~ .rows .about-service {
+    transform: translate(-620px);
+}
+#btn-3:checked ~ .rows .about-service {
+    transform: translate(-1240px);
+}
+
+
+
+
+
 .about{
 	margin-top: 83px;
 	margin-bottom: 86px;

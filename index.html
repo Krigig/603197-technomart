@@ -56,10 +56,11 @@
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
     	<h1 class="visually-hidden">Техномарт</h1>
     	<section class="features">
-    		<ul class="features-items container">
+        <div class="container">
+    		 <ul class="features-items">
     			<li class="material"><h3>Материалы</h3> <a href="#">на любой вкус</a></li>
     			<li class="tool"><h3>Инструмент</h3><a href="#">на все случаи</a></li>
     			<li class="technique"><h3>Техника</h3><a href="#"> для стройки </a></li>
@@ -84,14 +85,15 @@
     			       <li class="delivery"><h3>Доставка</h3><a href="#">бесплатно</a></li>
             </ul>
     		</ul>
+      </div>
       </section>
     	<section class="popular">
+        <div class="container">
         <div class="topic">
           <h2>Популярные товары:</h2>
     		  <a class="btn" href="#">Все популярные товары</a>
         </div>
-    		<div class="catalog-items">
-    			<ul>
+    			<ul class="catalog-items">
     				<li>
               <img src="img/main/item-1.jpg" alt="BOSCH BFG 9000">
               <h3>Перфоратор BOSCH<br>BFG 9000</h3>
@@ -132,10 +134,11 @@
             </div>
             </li>
     			</ul>
-    		</div>
+      </div>
 
     	</section>
     	<section class="brands">
+        <div class="container">
     		<div class="topic">
         <h2>Популярные производители:</h2>
     		<a class="btn" href="#">Все производители</a>
@@ -152,38 +155,52 @@
     		 		<li><a class="popular-brands" href="#"><img src="img/main/Metabo.png" alt="metabo"></a></li>
     		 	</ul>
     		 </div>
+        </div>
     	</section>
-    	<section class="service">
+    	<section class="service-wrapper">
+        <div class="container">
+        <div class="service">
         <h2>Сервисы</h2>
-        <p> Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        <p> Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <div class="service-item">
-          <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
-          </ul>
-        </div>
-      <div class="about-service container">
-    		<div class="delivery">
-    			<h3>Доставка</h3>
-    			<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-    			</p>
-        </div>
-        <div class="guarantee">
-    			<h3>Гарантия</h3>
-    			<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-        </div>
-        <div class="credit">
-    			<h3>Кредит</h3>
-    			<p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          <a href="#" class="btn"> Отправить заявку </a>
-        </div>
-    		</div>
+        
 
-      
+        <div class="services">
+            <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                  
+                      <ul class="service-item">
+                        <li><label for="btn-1">Доставка</label></li>
+                        <li><label for="btn-2">Гарантия</label></li>
+                        <li><label for="btn-3">Кредит</label></li>
+                      </ul>
+                    
+        <div class="rows">
+          <div class="about-service">
+            <div class="delivery">
+              <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
+            </div>
+            <div class="guarantee">
+              <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="credit">
+              <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a href="#" class="btn"> Отправить заявку </a>
+            </div>
+           </div>
+        </div>
+      </div>
+
+
     	</section>
-    	<section class="about">
+    	<section>
+        <div class="container">
+          <div class="about">
     		<div class="aboutus">
     		<h2>Компания техномарт</h2>
     		<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -201,6 +218,7 @@
           <img src="img/main/MAP.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 ">
     			<a class="btn" href="#">Заблудились?Напишите нам!</a>
     		</div>
+      </div>
         <div class="write-us visually-hidden">
           <h2 class="visually-hidden">Напишите нам!</h2>
           <form class="form-write-us" method="post" action="https://echo.htmlacademy.ru">
@@ -277,8 +295,6 @@
                 </a>
               </li>
         		</ul>
-      		
-       		 
        		 	<ul class="footer-copyright">
        		 		<li>Обратная связь:<br><a class="button" href="https://htmlacademy.ru">mail@htmlacademy.ru</a></li>	
        				<li>Разработано - <br><a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a></li>

@@ -866,44 +866,54 @@ form:focus::before{
 	flex-wrap: wrap;
 	min-height: 193px;
 	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
 
 }
 .main-footer .logo{
-	order: -2;
 	margin: 0;
-	padding: 0;
 	display: inline-block;
-	width: 221px;
-	min-height: 61px;
-	text-align: center;
-	box-shadow: inset 0 2px 0 0 #ea515c,
-				inset 0 -8px 0 0 #9f0617;
-	background-color: #ee3643;
+	width: 220px;
+	min-height: 68px;
+	box-sizing: border-box;
+	padding-top: 16px;
+	padding-left: 41px;
+	box-shadow: inset 0 1px 0 0 #ea515c,
+				inset 0 -5px 0 0 #9f0617;
 	
+
+
+	vertical-align: middle;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #fff;
+	background-color: #ee3643;
 }
 .main-footer .adress-phone {
+	margin: 0;
+	padding: 0;
+	margin-top: 26px;
+	
 	width: 327px;
+	
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
 }
 
-
 .main-footer .footer-navigation {
 	margin: 0px;
 	padding: 0px;
-	margin-top: 42px;
+	margin-top: 38px;
 	list-style: none;
+	
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
 }
-.footer-navigation li{
-	padding: 0px;
-}
+
 
 .footer-navigation a{
 	font-size: 18px;
@@ -912,7 +922,7 @@ form:focus::before{
 	
 }
 .main-footer .bottom-navigation {
-	order: -1;
+	
 	width: 548px;
 }
 .bottom-navigation a{
@@ -920,6 +930,8 @@ form:focus::before{
 }
 .main-footer .catalog-navigation{
 	width: 525px;
+	margin-top: 26px;
+
 }
 .catalog-navigation a{
 	color: #ffd180;

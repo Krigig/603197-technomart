@@ -954,12 +954,17 @@ form:focus::before{
 .bottom-footer{
 	display: flex;
 	justify-content: space-between;
+	 margin: 0 auto;
+	 padding: 0;
 	
 	padding-top: 37px;
 	padding-bottom: 32px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
+}
+.bottom-footer p{
+	margin:0;
 }
 .footer-social{
 	display: flex;
@@ -977,10 +982,23 @@ form:focus::before{
 	margin: 0;
 	padding: 0;
 	}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+
+  background-color: #212a3a;
+  border-radius: 20px;
+}
+
 .footer-copyright{
 	display: flex;
 	width: 287px;
 	justify-content: space-between;
+	margin-right: 13px;
 }
 .footer-copyright a{
 	color:#ffd180;
@@ -1056,9 +1074,7 @@ form:focus::before{
 .user a:focus{
 	opacity: 0.3;
 }
-.check{
-	margin-top: 46px;
-}
+
 .check .user{
 	display: inline-block;
 	width: 299px;

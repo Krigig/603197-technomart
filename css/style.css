@@ -138,7 +138,10 @@ a {
   
   opacity: 0.3;
 }
-.buy .search::before{
+form {
+	position: relative;
+}
+.buy form::before{
   content: "";
   
   position: absolute;
@@ -157,7 +160,7 @@ a {
 
 .marker:hover::before,
 .checkout-corf:hover::before,
-.search:hover::before {
+form:hover::before {
 	opacity: 1;
 }
 
@@ -165,7 +168,7 @@ a {
 .checkout-corf:focus::before{
 	opacity: 0.5;
 }
-.search:focus::before{
+form:focus::before{
 	opacity: 1;
 	color: #ee3643;
 }
@@ -380,15 +383,13 @@ a {
 	background-color: #1d2739;
 	color: rgba( 255, 255, 255, .5);
 }
-.features{
-	position: relative;
-}
+
 
 .features-items{
 	margin:0;
 	padding:0;
 	margin-top: 59px;
-	margin-bottom: 53px; 
+	margin-bottom: 33px; 
 	list-style: none;
 	
 	display: flex;
@@ -522,6 +523,7 @@ a {
 .features-items .delivery{
 		background-color: #ffc047;
 		position: relative;
+		align-self: flex-end;
 }
 .features-items .delivery::after{
   content: "";
@@ -551,16 +553,10 @@ a {
 }
 
 
-.features-items .slider-place{
-	width: 620px;
-	min-height: 266px;
-	background-color: grey;
-}
  .slider {
 	width: 620px;
-    position: absolute;
-
-    top: 138px;
+	min-height: 266px;
+	position: relative;
 }
 
 .slider input[type=radio] {
@@ -594,14 +590,15 @@ a {
     position: absolute;
     top: 220px;
     z-index: 10;
-
-    margin: 0 3px;
     
     background-color: #fff;
     border: 4px solid white;
     border-radius: 50%;
     transition: background-color 0.2s;
     cursor: pointer;
+}
+.slider-controls label:last-child{
+	margin: 0 23px;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -618,6 +615,8 @@ a {
 
 
 .topic {
+	min-height: 89px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -625,7 +624,11 @@ a {
 }
 
 .topic h2{
-	padding-left: 31px;
+	margin:0;
+	padding: 0;
+	padding-left: 28px;
+	
+
 	font-size: 30px;
     line-height: 30px;
     color: #333366;
@@ -634,9 +637,17 @@ a {
 }
 .topic a{
 	margin-right: 24px;
+	
+	
 	display: inline-block;
 	width: 253px;
 	min-height: 38px;
+	border-radius: 3px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 10px;
+
+	
 }
 
 

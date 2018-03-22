@@ -552,10 +552,8 @@ form:focus::before{
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-
- .slider {
+ .features-items .slider {
 	width: 620px;
-	min-height: 266px;
 	position: relative;
 }
 

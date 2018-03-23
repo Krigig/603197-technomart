@@ -99,6 +99,7 @@ a {
 	width: 270px;
 	min-height: 42px;
 	padding-left: 48px;
+
 	font-size: 17px;
     line-height: 18px;
 	color: #fff;
@@ -169,9 +170,11 @@ form:hover::before {
 	opacity: 0.5;
 }
 form:focus::before{
-	opacity: 1;
-	color: #ee3643;
+
+  background-image: url("../img/svg/icon-search-red.svg");
+  opacity: 1;
 }
+
 .buy .search:hover{
   background-color:#212a3a;
 }
@@ -323,8 +326,8 @@ form:focus::before{
   opacity: 0.3;
   
 }
-.user-navigation .login-link:focus::before{
-	color: #293449;
+.user-navigation .login-link:hover::before{
+  background-image: url("../img/svg/icon-login-blue.svg");
 	opacity: 1;
 }
 
@@ -834,7 +837,26 @@ form:focus::before{
 	margin: 0;
 	padding: 0;
 	margin-right: 80px;
+
 	list-style: none;
+
+	position: relative;
+}
+.service-item::after{
+  content: "";
+  
+  position: absolute;
+  top: -44px;
+  right: 0px;
+
+  width: 10px;
+  height: 272px;
+
+  background-image: url("../img/main/line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.25;
 }
 .service-item label{
 	display: inline-block;
@@ -848,6 +870,10 @@ form:focus::before{
 	background-color: #32425c;
 	color: #fff;
 	border-bottom: 1px solid #778293;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+
 }
 .rows{
  	overflow: hidden;
@@ -881,6 +907,7 @@ form:focus::before{
 #srv-3:checked ~ .service-item label[for="srv-3"] {
     background-color: #fff;
     color: #32425c;
+    border: none;
 }
 
 #srv-1:checked ~ .rows .about-service {
@@ -893,10 +920,76 @@ form:focus::before{
     transform: translate(-1240px);
 }
 
+.about-service .delivery{
+	position: relative;
+}
+.about-service .delivery::after{
+  content: "";
+  
+  position: absolute;
+  top: 22px;
+  right: 0px;
 
+  width: 427px;
+  height: 250px;
 
+  background-image: url("../img/main/delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
+  z-index: -1;
+}
 
+.about-service .guarantee{
+	position: relative;
+}
+.about-service .guarantee::after{
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  right: 10px;
+
+  width: 334px;
+  height: 263px;
+
+  background-image: url("../img/main/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: -1;
+}
+
+.about-service .credit{
+	position: relative;
+}
+.credit .btn{
+	display: inline-block;
+	width: 195px;
+	min-height: 38px;
+	box-sizing: border-box;
+	padding-left: 45px;
+	padding-top: 10px;
+	border-radius: 3px;
+	background-color: #ff5357;
+	margin-top: 27px;
+}
+.about-service .credit::after{
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 417px;
+  height: 274px;
+
+  background-image: url("../img/main/credit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: -1;
+}
 .about{
 	margin-top: 80px;
 	margin-bottom: 86px;
@@ -919,6 +1012,7 @@ form:focus::before{
 	font-size: 13px;
 	line-height: 24px;
 }
+
 .about .aboutus {
 	width: 526px;
 }
@@ -928,25 +1022,54 @@ form:focus::before{
 .aboutus ul{
 	margin: 0;
 	padding: 0;
-	padding-left: 37px;
-}
-.aboutus li{
+	}
+
+.exemple-2 li{
 	margin: 0;
 	padding: 0;
+	padding-left: 37px;
 	margin-bottom: 22px;
+
 	list-style: none;
 	font-size: 18px;
 	line-height: 20px;
+
+	position: relative;
 }
+.exemple-2 li::before{
+  content:"";
+  
+  position: absolute;
+  top: 8px;
+  left: 0px;
+
+  width: 25px;
+  height: 2px;  
+  background-color: #ee3643;
+  }
 .aboutus li:last-child{
-	margin-bottom: 36px;
+	margin-bottom: 34px;
 }
+.aboutus .btn {
+	display: inline-block;
+	padding: 10px 41px;
+	border-radius: 3px;
+}
+
+
 .about .contacts{
 	width: 302px;
 }
 .contacts img{
 	margin-bottom: 40px;
 }
+.contacts .btn {
+	display: inline-block;
+	padding: 10px 62px;
+	border-radius: 3px;
+}
+
+
 .main-footer-wrapper{
 	width: 100%;
 	background-color: #32425c;

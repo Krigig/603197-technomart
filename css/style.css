@@ -1285,6 +1285,7 @@ form:focus::before{
 .user {
 	background-color: #fff;
 }
+
 .user a:focus{
 	opacity: 0.3;
 }
@@ -1307,6 +1308,12 @@ form:focus::before{
 	list-style: none;
 
 }
+
+.user .user-btn:hover path {
+	fill: #32425c;
+
+}
+
 .user-nav a{
 	font-size: 16px;
     line-height: 18px;
@@ -1317,20 +1324,54 @@ form:focus::before{
 	color: #ee3643;
 
 }
-.user-nav a:visited{
+
+.user-nav a:focus{
 	color: #32425c;
+	opacity: 0.3;
+
 }
+.catalog-nav{
+	padding: 0;
+	margin:0;
 
+
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	width: 360px;
+	min-height: 59px;
+	justify-content: space-between;
+	align-items: center;
+}
+.catalog-nav li{
+	position: relative;
+}
 .catalog-nav a{
-	display: inline-block;
-	padding-right: 39px;
-	padding-top: 24px;
-
+	
+	font-family: PT Sans, Arial, sans-serif;
 	font-size: 13px;
     line-height: 18px;
     color: #000;
     text-transform: uppercase;
-    position: relative;
+   
+}
+.catalog-nav li::after{
+  content: "";
+  
+  position: absolute;
+  right: -25px;
+  top: 5px;
+  
+
+  width: 8px;
+  height: 15px;
+
+  background-image: url("../img/svg/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.catalog-nav li:last-child::after{
+	background-image: none;
 }
 
 .catalog .topic-catalog{
@@ -1338,6 +1379,8 @@ form:focus::before{
     background-color: #f2f6f8; 
 }
 .catalog h2{
+	margin: 0;
+	margin-bottom: 20px;
 	padding-left:30px;
 	padding-top: 30px;
 	padding-bottom: 33px;
@@ -1346,22 +1389,9 @@ form:focus::before{
     line-height: 30px;
     color: #32425c;
     text-transform: uppercase;
+    font-weight: normal;
 }
-.catalog-nav a::after{
-  content: "";
-  
-  position: absolute;
-  left: 70px;
-  
 
-  width: 10px;
-  height: 14px;
-
-  background-image: url("../img/svg/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
- 
-}
 
 .container-filter{
 	width: 221px;
@@ -1394,6 +1424,14 @@ form:focus::before{
 	justify-content: space-between;
 	align-items: center;
 }
+.sorting-items{
+	padding-right: 16px;
+	width: 444px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
  .sorting-items a{
  	margin: 0px;
 	padding: 0px;
@@ -1410,6 +1448,33 @@ form:focus::before{
 	border-bottom: 2px solid #ee3643;
 }
 
+.sorting-btn{
+	margin:0;
+	padding: 0;
+}
+.sorting-btn .sorting-btn-1{
+	margin-right: 20px;
+	
+}
+
+.sorting-btn a{
+	border: none;
+}
+
+.sorting-btn a:hover {
+	border: none;
+}
+.sorting-btn a:hover path{
+	fill: #ee3643;
+}
+.sorting-items .sort-activ {
+	opacity: 1;
+	color: #ee3643;
+	border: none;
+}
+.sorting-items .sort-activ path{
+	fill: #ee3643;	
+}
 .catalog-main-site{
 	display: flex;
 	justify-content: space-between;

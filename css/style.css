@@ -1330,6 +1330,13 @@ form:focus::before{
 	opacity: 0.3;
 
 }
+
+.inner-page .site-navigation{
+	margin: 0;
+}
+.inner-page .main-navigation{
+	padding-bottom: 60px;
+}
 .catalog-nav{
 	padding: 0;
 	margin:0;

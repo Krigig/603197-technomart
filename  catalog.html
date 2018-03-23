@@ -92,7 +92,11 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="price-option">
             <legend>Цена:</legend>
-            <input  id="price" name="price" type="range" min="0" max="3000" aria-label="Цена">
+            
+            <label for="price" class="price"><span class="visually-hidden">Цена</span><span class="checkbox-indicator"></span></label>
+            <input class="price visually-hidden" id="price" name="price" type="range" min="0" max="3000">
+            
+
             <input type="text" name="price-min" aria-label="Минимальная цена" value="0">
             <input type="text" name="price-max" aria-label="Максимальная цена цена" value="3000">
              </fieldset>

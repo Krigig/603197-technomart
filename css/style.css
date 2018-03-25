@@ -790,6 +790,7 @@ form {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 
+
 }
 .catalog-items .no-old-price {
 	margin-top: 40px;
@@ -814,34 +815,91 @@ form {
 	background-image: url("../img/main/new-flag.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+
+	z-index: 1;
+}
+.user-menu {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: none;
+
+    width: 100%;
+    min-height: 137px;
+    box-sizing: border-box;
+  
+    padding-top: 45px;
+    background-color: rgba(255, 255, 255, 1);
+    
+
+}
+.catalog-items li:hover .user-menu{
+	display: block;
 }
  .user-menu a{
+ 	margin-bottom: 7px;
+ 	padding-top: 10px;
+
+ 	display: inline-block;
+ 	width: 135px;
+ 	height: 38px;
+ 	box-sizing: border-box;
+
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	border-radius: 3px;
 	
 }
-.user-menu a:first-child{
+.user-menu .wont-buy{
+	position: relative;
+
+	box-shadow: inset 0 -3px 0 0 #367315;
+}
+.user-menu .wont-buy::before{
+	content: "";
+	position: absolute;
+	left: 12px;
+	top: 11px;
+
+	width: 18px;
+	height: 15px;
+
+	background-image: url("../img/svg/icon-cart.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	opacity: 0.3;
+}
+.wont-buy:hover::before,
+.wont-buy:focus::before{
+	opacity: 1;
+}
+
+.user-menu .wont-buy{
 	background-color: #63a63e;
 	color: #fff;
 }
- .user-menu a:first-child:hover{
+ .user-menu .wont-buy:hover{
 	background-color: #5fbb2d;
 }
- .user-menu a:first-child:focus{
+ .user-menu .wont-buy:focus{
 	background-color: #518534;
 }
 
-.user-menu a:last-child{
+.user-menu .later-buy{
 	background-color: #fff;
 	border: 3px solid #669933;
 	color: #32425c;
 }
-.user-menu a:last-child:hover{
+.user-menu .later-buy:hover{
 	border: 3px solid #32425c;
 }
-.user-menu a:last-child:focus{
+.user-menu .later-buy:focus{
 	opacity: 0.3;
 }
 

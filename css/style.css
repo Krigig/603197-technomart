@@ -654,12 +654,6 @@ form:focus::before{
 	
 }
 
-.btn:hover{
-	background-color: #ca2c37;
-}
-.btn:focus{
-	background-color: #ba2732;
-}
 
 
 .catalog-items {
@@ -1227,33 +1221,126 @@ form:focus::before{
 
 }
 
+.write-us{
+	top: 205px;
+  	left: 50%;
+
+	margin-left: -310px;
+	
+	box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7),
+				inset 0 7px 0 0 #ee3643;
+}
+.write-us .form-container{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	
+	width: 460px;
+	padding: 50px 80px;
+	padding-bottom: 37px;
+	
+}
+.write-us p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+}
+.write-us p:last-child{
+	margin-bottom: 0;
+}
 .form-write-us label{
+	
 	font-size: 18px;
 	line-height: 18px;
 }
-.form-write-us p>input,
+.form-write-us input[type="text"],
 .form-write-us textarea {
+	margin-top: 8px;
+
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 18px;
 	color: #999999;
 	border: 2px solid #d7dcde;
+	border-radius: 3px;
 }
-.form-write-us{
-	box-shadow: inset 0 15px 0 0 #ee3643;
-}
-.form-write-us p>input:hover,
+
+.form-write-us input[type="text"]:hover,
 .form-write-us textarea:hover{
 	border: 2px solid #b5b5b5;
 }
 
-.form-write-us p>input:focus,
+.form-write-us input[type="text"]:focus,
 .form-write-us textarea:focus{
 	border: 2px solid #ee3643;
 }
 .form-write-us .send{
+	width: 100%;
 	background-color: #f1f1f1;
 }
+.write-us .btn-send{
+	margin: 37px 80px;
+
+	width: 460px;
+	box-sizing: border-box;
+	padding: 10px 198px;
+
+	}
+
+.write-us input[type="text"] {
+  box-sizing: border-box;
+  width: 220px;
+  padding: 10px 13px;
+}
+.write-us textarea {
+  box-sizing: border-box;
+  width: 460px;
+  min-height: 114px;
+  padding: 10px 13px;
+}
+.modal{
+	position: fixed;
+
+	 color: #000000;
+
+	 background-color: #fff; 
+}
+
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 9px;
+
+  	width: 22px;
+  	height: 22px;
+  	border: 0;
+
+  	font-size: 0;
+  	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+   top: 10px;
+   left: 0;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ee3643;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;
@@ -1265,12 +1352,21 @@ form:focus::before{
 	border: 0;
 }
 .btn{
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
     line-height: 18px;
     color: #fff;
     background-color: #ee3643;
     text-transform: uppercase;
 }
+.btn:hover{
+	background-color: #ca2c37;
+}
+.btn:focus{
+	background-color: #ba2732;
+}
+
+
 /* стили для каталога */
 
 .inner-page .corf{

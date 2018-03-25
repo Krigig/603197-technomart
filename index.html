@@ -17,7 +17,7 @@
             <ul class="buy">
               <li>
                 <form method="get" action="https://echo.htmlacademy.ru">
-                  <input type="search" name="search" value="Поиск:" aria-label="Поиск" class="search">
+                  <input type="search" name="search" placeholder="Поиск:" aria-label="Поиск" class="search">
                 </form>
               </li>
               <li><a class="marker" href="#">Закладки: 0</a></li>
@@ -219,25 +219,29 @@
     			<a class="btn" href="#">Заблудились?Напишите нам!</a>
     		</div>
       </div>
-        <div class="write-us visually-hidden">
+        <div class="write-us modal">
           <h2 class="visually-hidden">Напишите нам!</h2>
+          <button type="button" class="modal-close">Закрыть</button>
           <form class="form-write-us" method="post" action="https://echo.htmlacademy.ru">
-            <button type="button" class="close">Закрыть</button>
+            <div class="form-container">
             <p>
-            <label for="name">Ваше имя:</label>
+            <label for="name">Ваше имя:</label><br>
             <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
           </p>
           <p>
-            <label for="e-mail">Ваш e-mail:</label>
+            <label for="e-mail">Ваш e-mail:</label><br>
             <input type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
           </p>
           <p>
             <label for="text">Текст письма:</label>
             <textarea  name="text" id="text" rows="4">В свободной форме</textarea>
           </p>
+      	</div>
           <div class="send">
-          <input class="btn send" type="submit" value="Отправить" name="send" aria-label="Отправить">
-        </div>
+          	
+          <input class="btn-send btn" type="submit" value="Отправить" name="send" aria-label="Отправить">
+        	 
+     	</div>
           </form>
         </div>
     	</section>

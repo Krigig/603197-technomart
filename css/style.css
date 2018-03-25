@@ -757,21 +757,7 @@ form {
 	list-style: none;
 	text-align: center;
 }
-.catalog-items li::before{
-	content: "";
-	position: absolute;
-	left: 42px;
-	bottom: 20px;
 
-	width: 143px;
-	height: 40px;
-
-	background-image: url("../img/svg/red-button.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-
-	z-index: -1;
-}
 
 .catalog-items h3{
 	margin:0;
@@ -787,24 +773,48 @@ form {
 	color: #a9a9a9;
 }
 .catalog-items .new-price{
-	vertical-align: middle;
+	width: 141px;
+	min-height: 38px;
+
 	margin: 0;
-	margin-top: 19px;
+	margin-top: 7px;
+	margin-left: 41px;
+	padding-top: 12px;
 	text-align: center;
 
 	font-size: 17px;
 	line-height: 18px;
 	color: #fff;
+	
+	background-image: url("../img/svg/red-button.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
 }
 .catalog-items .no-old-price {
-	margin-top: 51px;
+	margin-top: 40px;
 }
 
 
 .catalog-items li:hover{
 	box-shadow: 0 10px 25px 0px rgba(0,0,0, 0.5);
 }
+.new{
+	position: relative;
+}
+.new::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
 
+	width: 60px;
+	height: 59px;
+
+	background-image: url("../img/main/new-flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
  .user-menu a{
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
@@ -834,6 +844,8 @@ form {
 .user-menu a:last-child:focus{
 	opacity: 0.3;
 }
+
+
 .brands h2{
 	padding-left: 24px;
 }

@@ -1019,6 +1019,9 @@ form {
 	font-weight: bold;
 
 }
+.service-item label:hover{
+	background-color: #293449;
+}
 .rows{
  	overflow: hidden;
 }
@@ -1323,6 +1326,7 @@ form {
 }
 .bottom-footer p{
 	margin:0;
+	width: 275px;
 }
 .footer-social{
 	display: flex;
@@ -1350,6 +1354,11 @@ form {
 
   background-color: #212a3a;
   border-radius: 20px;
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #ee3643;
 }
 
 .footer-copyright{
@@ -1850,6 +1859,7 @@ form {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
 
 
     color: #000000;
@@ -1875,17 +1885,22 @@ form {
 }
 .product{
 	margin-top:60px;
-	padding-top: 65px;
-	padding-bottom: 71px;
+	padding: 65px 0;
+	padding-bottom: 68px;
 }
 .product h2{
 	margin:0;
-	padding-bottom: 33px;
+	padding-bottom: 25px;
 	font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 .product p{
+	margin: 0;
+	padding: 0;
+
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
     line-height: 24px;

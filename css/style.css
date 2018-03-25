@@ -89,10 +89,15 @@ a {
 
 	position: relative;
 }
+.buy .checkout-corf{
+	padding-left: 48px;
+}
+
 .checkout a{
 	padding-left: 20px;
 	background-color: #63a63e;
 }
+
 .search{
 	padding: 0;
 	margin: 0;
@@ -100,11 +105,13 @@ a {
 	min-height: 42px;
 	padding-left: 48px;
 
+	font: inherit;
 	font-size: 17px;
     line-height: 18px;
 	color: #fff;
 	background-color: #293449;
 	border: none;
+	opacity: 1;
 }
 
 .buy .marker::before{
@@ -161,7 +168,7 @@ form {
 
 .marker:hover::before,
 .checkout-corf:hover::before,
-form:hover::before {
+.buy form:hover::before {
 	opacity: 1;
 }
 
@@ -169,11 +176,11 @@ form:hover::before {
 .checkout-corf:focus::before{
 	opacity: 0.5;
 }
-form:focus::before{
 
-  background-image: url("../img/svg/icon-search-red.svg");
-  opacity: 1;
+.search:focus {
+    background: #ffffff  url("../img/svg/icon-search-red.svg") no-repeat 16px 12px;
 }
+
 
 .buy .search:hover{
   background-color:#212a3a;
@@ -1347,6 +1354,8 @@ form:focus::before{
 }
 
 .modal-map {
+	display: none;
+
   top: 33px;
   left: 50%;
 

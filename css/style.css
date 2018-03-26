@@ -1817,7 +1817,15 @@ form {
     background-color: #f7f3ec;
     border: 0;
 }
+.price {
+	margin-top: 19px;
+	margin-bottom: 9px;
+	width: 220px;
+	min-height: 80px;
 
+	background-color: #f7f3ec;
+    
+}
 .price-option-inputs {
 	display: flex;
 	justify-content: space-between;
@@ -1825,6 +1833,8 @@ form {
 	align-items: center;
 	align-content: center;
 }
+
+
 .price-option-inputs {
 	position: relative;
 }
@@ -1833,13 +1843,14 @@ form {
   
   position: absolute;
   left: 105px;
-  top: 19px;
+  bottom: 18px;
   
 
   width: 10px;
   height: 1px;
 
   background-color: #000000;
+  border-radius: 3px;
 }
 .filter-brands ul,
 .work-option ul{

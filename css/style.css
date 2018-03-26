@@ -1802,22 +1802,48 @@ form {
     text-transform: uppercase;
     font-weight: bold;
 }
-.price input[type="checkbox"] + .checkbox-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  width: 21px;
-  height: 2px;
 
-  color: green;
-}
-.price-option input{
+
+.price-option input[type="text"]{
+	width: 95px;
+	min-height: 38px;
+	text-align: center;
+
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
     line-height: 18px;
     background-color: #f7f3ec;
+    border: 0;
+}
 
+.price-option-inputs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+.price-option-inputs {
+	position: relative;
+}
+.price-option-inputs::after{
+  content: "";
+  
+  position: absolute;
+  left: 105px;
+  top: 19px;
+  
+
+  width: 10px;
+  height: 1px;
+
+  background-color: #000000;
+}
+.filter-brands ul,
+.work-option ul{
+	padding: 0;
 }
 .filter-brands label,
 .work-option label {
@@ -1825,6 +1851,67 @@ form {
 	font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
+}
+.filter-brands li,
+.work-option li{
+	margin-bottom: 17px;
+}
+.brands-checkbox,
+.work-checkbox {
+	position: relative;
+
+	padding-left: 36px;
+
+	cursor: pointer;
+}
+
+.brands-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.brands-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.work-checkbox input[type="radio"] + .checkbox-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.work-checkbox input[type="radio"]:checked + .checkbox-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .filter .filter-button{
 	font-family: "PT Sans", Arial, sans-serif;

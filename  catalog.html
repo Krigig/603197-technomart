@@ -94,33 +94,46 @@
             <legend>Цена:</legend>
             
             <label for="price" class="price"><span class="visually-hidden">Цена</span><span class="checkbox-indicator"></span></label>
+
+            <div class="price-option-inputs">
             <input class="price visually-hidden" id="price" name="price" type="range" min="0" max="3000">
             
-
-            <input type="text" name="price-min" aria-label="Минимальная цена" value="0">
+            <input  type="text" name="price-min" aria-label="Минимальная цена" value="0">
             <input type="text" name="price-max" aria-label="Максимальная цена цена" value="3000">
+          </div>
              </fieldset>
+            
             <fieldset class="filter-brands">
               <legend>Производители:</legend>
-              <ul>
-               <li>
-                 <input class="visually-hidden" type="checkbox" name="BOSCH" id="BOSCH" checked>
-                 <label for="BOSCH">BOSCH</label>
-               </li>
-               <li >
-                 <input class="visually-hidden" type="checkbox" name="intels" id="intels">
-                 <label for="intels">ИНТЕРСКОЛ</label>
-               </li>
-               <li class="filter-option">
-                <input class="visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
-                <label for="Makita">Makita</label>
-                <li>
-                 <input class="visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
-                 <label for="Dewalt">Dewalt</label>
+                <ul>
+                  <li>
+                    <label class="brands-checkbox">
+                      <input class="visually-hidden" type="checkbox" name="BOSCH" checked>
+                      <span class="checkbox-indicator"></span>BOSCH
+                    </label>
+                  </li>
+                  <li>
+                    <label class="brands-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="intels">
+                    <span class="checkbox-indicator"></span>ИНТЕРСКОЛ
+                  </label>
                </li>
                <li>
-                <input class="visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
-                <label for="Hitachi">Hitachi</label>
+                  <label class="brands-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Makita" checked>
+                    <span class="checkbox-indicator"></span>Makita
+                 </label>
+               </li>
+               <li>
+                <label class="brands-checkbox">
+                 <input class="visually-hidden" type="checkbox" name="Dewalt">
+                 <span class="checkbox-indicator"></span>Dewalt</label>
+               </li>
+               <li>
+                <label class="brands-checkbox">
+                <input class="visually-hidden" type="checkbox" name="Hitachi">
+                <span class="checkbox-indicator"></span>Hitachi
+              </label>
               </li>
             </ul>
             </fieldset>
@@ -130,12 +143,14 @@
               </legend>
               <ul>
                <li>
-                 <input class="visually-hidden" type="radio" name="work" id="battery" value="battery" checked>
-                 <label for="battery" >Аккумуляторные</label>
+                <label class="work-checkbox">
+                 <input class="visually-hidden" type="radio" name="work" value="battery" checked>
+                 <span class="checkbox-indicator"></span>Аккумуляторные</label>
                </li>
                <li>
-                 <input class="visually-hidden" type="radio" name="work" id="rosette" value="rosette">
-                 <label for="rosette">Сетевые</label>
+                <label class="work-checkbox">
+                 <input class="visually-hidden" type="radio" name="work" value="rosette">
+                 <span class="checkbox-indicator"></span>Сетевые</label>
                </li>
              </ul>
             </fieldset>

@@ -1877,6 +1877,20 @@ form {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.brands-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
 .brands-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: -4px;
@@ -1886,6 +1900,18 @@ form {
   height: 23px;
 
   background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.brands-checkbox input[type="checkbox"]:checked:hover + .checkbox-indicator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg/checkbox-on-hover.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1901,6 +1927,18 @@ form {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.work-checkbox input[type="radio"]:hover + .checkbox-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/radio-off-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .work-checkbox input[type="radio"]:checked + .checkbox-indicator {
   position: absolute;
   top: -5px;
@@ -1913,10 +1951,30 @@ form {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+.work-checkbox input[type="radio"]:checked:hover + .checkbox-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg/radio-on-hover.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .filter .filter-button{
+	margin-top: 75px;
+	padding: 9px 38px;
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
     line-height: 18px;
+
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+
+    cursor: pointer;
 }
 
 .sorting a:focus{

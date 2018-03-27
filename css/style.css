@@ -240,18 +240,19 @@ form {
 	padding: 0;
 	padding-top: 2px;
 	padding-left: 52px;
-	padding-right: 15px;
 
 	
 	width: 200px;
 	font-style: italic;
 	text-align: left;
 }
-
+.inner-page .promo {
+	padding-right: 15px;
+}
 .bottom-header .phone{
 	margin: 0;
 	
-	margin-bottom: 5px;
+	margin-bottom: 4px;
 	padding: 10px 49px 8px 71px;
 
 	position: relative;
@@ -260,6 +261,10 @@ form {
 	font-size: 21px;
     line-height: 21px;
 }
+.inner-page .phone{
+	margin-bottom: 5px;
+}
+
 .bottom-header .phone::before{
   content: "";
   
@@ -371,6 +376,9 @@ form {
 }
 .main-navigation .site-navigation{
 	padding: 0;
+	margin: 0;
+	margin-top: 16px;
+	margin-bottom: 16px;
 	min-height: 61px;
 
 	display: flex;
@@ -960,8 +968,8 @@ form {
 .service h2{
 	margin:0;
 	padding:0;
-	padding-top: 65px;
-	padding-bottom: 30px;
+	padding-top: 66px;
+	padding-bottom: 27px;
 	
 	font-size: 30px;
 	line-height: 30px;
@@ -989,7 +997,10 @@ form {
 .service-item {
 	margin: 0;
 	padding: 0;
+	
 	margin-right: 80px;
+	margin-top: 5px;
+
 
 	list-style: none;
 
@@ -1015,9 +1026,9 @@ form {
 	display: inline-block;
 	box-sizing: border-box;
 	width: 240px;
-	min-height: 60px;
+	min-height: 61px;
 	padding-left: 22px;
-	padding-top: 16px;
+	padding-top: 14px;
 
 
 	background-color: #32425c;
@@ -1041,11 +1052,12 @@ form {
 .about-service div{
 	float: left;
 	width: 620px;
-	min-height: 284px;
+	min-height: 289px;
 }
 .about-service h3{
 	margin: 0;
-	margin-bottom: 25px;
+	margin-top: 3px;
+	margin-bottom: 26px;
 	font-size: 36px;
 	line-height: 36px;
 	color: #32425c;
@@ -1154,7 +1166,7 @@ form {
 }
 .about h2{
 	margin:0;
-	margin-bottom: 25px;
+	margin-bottom: 26px;
 	
 	font-size: 30px;
 	line-height: 30px;
@@ -1211,7 +1223,7 @@ form {
 }
 .aboutus .btn {
 	display: inline-block;
-	padding: 10px 41px;
+	padding: 10px 40px;
 	border-radius: 3px;
 }
 
@@ -1224,7 +1236,7 @@ form {
 }
 .office .btn {
 	display: inline-block;
-	padding: 10px 62px;
+	padding: 10px 60px 10px 64px;
 	border-radius: 3px;
 }
 
@@ -1441,6 +1453,7 @@ form {
 }
 .form-write-us textarea{
 	display: block;
+	resize: none;
 }
 .form-write-us input[type="text"]:hover,
 .form-write-us textarea:hover{
@@ -1478,6 +1491,8 @@ form {
 }
 
 .basket{
+	display: none;
+	
 	top: 205px;
   	left: 50%;
 
@@ -1488,16 +1503,36 @@ form {
 }
  .basket p {
  	width: 460px;
- 	min-height: 70px;
- 	margin: 47px 80px;
+ 	min-height: 66px;
+ 	margin: 55px 80px;
+ 	margin-bottom: 50px;
+ 	padding-left: 98px;
+ 	padding-top: 18px;
+ 	box-sizing: border-box;
+
+ 	position: relative;
 
  	font-size: 30px;
  	line-height: 30px;
  	color: #000;
 
  	background-color: #fff;
- }
 
+ }
+.basket p::before{
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 66px;
+	height: 66px;
+
+	background-image: url("../img/svg/form-1.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
  .basket ul {
  	padding: 0;
  	margin: 0;

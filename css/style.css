@@ -1439,7 +1439,9 @@ form {
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 }
-
+.form-write-us textarea{
+	display: block;
+}
 .form-write-us input[type="text"]:hover,
 .form-write-us textarea:hover{
 	border: 2px solid #b5b5b5;
@@ -1495,6 +1497,8 @@ form {
   	cursor: pointer;
 
   	background-color: transparent;
+
+  	z-index: 20px;
 }
 
 .modal-close::before,

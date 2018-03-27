@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 940px;
+  min-width: 960px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
@@ -786,9 +786,9 @@ form {
 	min-height: 38px;
 
 	margin: 0;
-	margin-top: 7px;
+	margin-top: 6px;
 	margin-left: 41px;
-	padding-top: 12px;
+	padding-top: 10px;
 	text-align: center;
 
 	font-size: 17px;
@@ -802,7 +802,7 @@ form {
 
 }
 .catalog-items .no-old-price {
-	margin-top: 40px;
+	margin-top: 38px;
 }
 
 
@@ -1395,7 +1395,7 @@ form {
 
 .write-us{
 	display: none;
-
+	
 	top: 205px;
   	left: 50%;
 
@@ -1450,6 +1450,7 @@ form {
 .form-write-us input[type="text"]:focus,
 .form-write-us textarea:focus{
 	border: 2px solid #ee3643;
+	outline: none;
 }
 .form-write-us .send{
 	width: 100%;
@@ -1475,12 +1476,60 @@ form {
   min-height: 114px;
   padding: 10px 13px;
 }
+
+.basket{
+	top: 205px;
+  	left: 50%;
+
+	margin-left: -310px;
+	
+	box-shadow: 0 0px 70px rgba(0, 0, 0, 0.7),
+				inset 0 7px 0 0 #ee3643;
+}
+ .basket p {
+ 	width: 460px;
+ 	min-height: 70px;
+ 	margin: 47px 80px;
+
+ 	font-size: 30px;
+ 	line-height: 30px;
+ 	color: #000;
+
+ 	background-color: #fff;
+ }
+
+ .basket ul {
+ 	padding: 0;
+ 	margin: 0;
+ 	width: 460px;
+
+ 	padding: 37px 80px;
+
+ 	display: flex;
+ 	justify-content: space-between;
+ 	background-color: #f1f1f1;
+ 	list-style: none;
+ }
+.basket .btn-basket{
+	display: flex;
+	width: 220px;
+	height: 38px;
+
+	justify-content: center;
+	align-items: center;
+
+	border: none;
+}
+.basket .later-btn{
+	color: #000;
+	background-color: #fff;
+}
 .modal{
 	position: fixed;
 
 	color: #000000;
 	 background-color: #FFF;
-
+	
 	z-index: 15;
 }
 
@@ -1498,7 +1547,7 @@ form {
 
   	background-color: transparent;
 
-  	z-index: 20px;
+  	z-index: 20;
 }
 
 .modal-close::before,
@@ -1664,7 +1713,7 @@ form {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	width: 360px;
+	width: 353px;
 	min-height: 59px;
 	justify-content: space-between;
 	align-items: center;
@@ -1685,7 +1734,7 @@ form {
   content: "";
   
   position: absolute;
-  right: -25px;
+  right: -22px;
   top: 5px;
   
 
@@ -1777,7 +1826,7 @@ form {
     
     text-transform: uppercase;
     color: #000;
-    border-bottom: 2px dotted #ee3643;
+    border-bottom: 1px dotted #ee3643;
     opacity: 0.3;
 }
 
@@ -1853,7 +1902,21 @@ form {
 }
 
 
+.price-option {
+	position: relative;
+}
+.price-option::after{
+	content: "";
 
+	position: absolute;
+	bottom: 0;
+
+	width: 220px;
+	height: 2px;
+
+	background-color: #eeedec;
+
+}
 .price-option input[type="text"]{
 	width: 95px;
 	min-height: 38px;
@@ -1940,15 +2003,14 @@ form {
 	z-index: 1;
 }
 .price-option-inputs {
+	padding-bottom: 25px;
+
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
-}
 
-
-.price-option-inputs {
 	position: relative;
 }
 .price-option-inputs::after{
@@ -1956,7 +2018,7 @@ form {
   
   position: absolute;
   left: 105px;
-  bottom: 18px;
+  bottom: 43px;
   
 
   width: 9px;
@@ -1965,9 +2027,34 @@ form {
   background-color: #000000;
   border-radius: 3px;
 }
+
 .filter-brands ul,
 .work-option ul{
 	padding: 0;
+	margin: 0;
+	margin-top: 13px;
+	margin-bottom: 20px;
+}
+.filter-brands {
+	position: relative;
+}
+.filter-brands legend {
+	padding-top: 16px;
+}
+.work-option legend {
+	padding-top: 17px;
+}
+.filter-brands::after {
+	content: "";
+
+	position: absolute;
+	bottom: 0;
+
+	width: 220px;
+	height: 2px;
+
+	background-color: #eeedec;
+
 }
 .filter-brands label,
 .work-option label {
@@ -1975,18 +2062,16 @@ form {
 	font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
+
+    position: relative;
+
+	padding-left: 34px;
+
+	cursor: pointer;
 }
 .filter-brands li,
 .work-option li{
 	margin-bottom: 17px;
-}
-.brands-checkbox,
-.work-checkbox {
-	position: relative;
-
-	padding-left: 36px;
-
-	cursor: pointer;
 }
 
 .brands-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -2088,19 +2173,22 @@ form {
   background-position: 0 0;
 }
 .filter .filter-button{
-	margin-top: 75px;
+	margin-top: 56px;
 	padding: 9px 38px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
     line-height: 18px;
+    text-transform: uppercase;
 
     background-color: #fff;
     border: 1px solid #e5e5e5;
 
     cursor: pointer;
 }
-
+.filter .filter-button:hover {
+	border: 1px solid #bdc6ca;
+}
 .sorting a:focus{
 	opacity: 1;
 	border-bottom: none;
@@ -2113,13 +2201,13 @@ form {
 	justify-content: space-between;
 	margin:0;
 	padding: 0;
-	margin-top: 52px;
+	margin-top: 30px;
 }
 
 .paginator a{
 	display: flex;
-	width: 39px;
-	min-height: 39px;
+	width: 36px;
+	min-height: 36px;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -2134,6 +2222,7 @@ form {
     color: #000000;
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
+    border-radius: 5px;
 }
 .paginator .next{
 	width: 138px;
@@ -2146,6 +2235,8 @@ form {
 }
 
 .paginator .active{
+	width: 38px;
+	min-height: 38px;
 	color: #fff;
 	background-color: #ee3643;
 }

@@ -9,7 +9,7 @@ var form = popup.querySelector(".form-write-us");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=e-mail]");
 
-  
+
   var isStorageSupport = true;
   var storage = "";
 
@@ -18,11 +18,11 @@ var email = popup.querySelector("[name=e-mail]");
   } catch (err) {
     isStorageSupport = false;
   }
-  
+
+
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    
     if (storage) {
       login.value = storage;
       email.focus();
@@ -51,8 +51,8 @@ var email = popup.querySelector("[name=e-mail]");
   });
   
   window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
@@ -85,8 +85,9 @@ var email = popup.querySelector("[name=e-mail]");
   });
 
   window.addEventListener("keydown", function (evt) {
+
+    if (evt.keyCode === 27){
     evt.preventDefault();
-    if (evt.keyCode === 27) {
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }

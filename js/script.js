@@ -1,8 +1,8 @@
 
- var link = document.querySelector(".btn-write-us");
+var link = document.querySelector(".btn-write-us");
 
- var popup = document.querySelector(".write-us");
- var close = popup.querySelector(".modal-close");
+var popup = document.querySelector(".write-us");
+var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector(".form-write-us");
 
@@ -63,16 +63,10 @@ var email = popup.querySelector("[name=e-mail]");
    
 
 
+var mapLink = document.querySelector(".button-map");
 
-
-
-
-
-
-   var mapLink = document.querySelector(".button-map");
-
-  var mapPopup = document.querySelector(".modal-map");
-  var mapClose = mapPopup.querySelector(".modal-close");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -97,6 +91,26 @@ var email = popup.querySelector("[name=e-mail]");
 
 
 
+var catLink = document.querySelector(".wont-buy");
 
+var catPopup = document.querySelector(".basket");
 
+catLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    catPopup.classList.add("modal-show");
+  });
 
+catClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    catPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+
+    if (evt.keyCode === 27){
+    evt.preventDefault();
+      if (catPopup.classList.contains("modal-show")) {
+        catPopup.classList.remove("modal-show");
+      }
+    }
+  });

@@ -89,29 +89,3 @@ var mapClose = mapPopup.querySelector(".modal-close");
   });
 
 
-
-
-var catLink = document.querySelector(".wont-buy");
-
-var catPopup = document.querySelector(".basket");
-var catClose = catPopup.querySelector(".modal-close");
-
-catLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    catPopup.classList.add("modal-show");
-  });
-
-catClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    catPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-
-    if (evt.keyCode === 27){
-    evt.preventDefault();
-      if (catPopup.classList.contains("modal-show")) {
-        catPopup.classList.remove("modal-show");
-      }
-    }
-  });

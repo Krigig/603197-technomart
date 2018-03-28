@@ -1758,7 +1758,7 @@ form {
 
 	background-color: #f7f3ec;   
 }
-.price p{
+.price span{
 	margin:0;
 	padding: 0;
 	width: 100%;
@@ -1787,7 +1787,7 @@ form {
 
 	background-color: #29ac5e;
 }
-.price p::before {
+.price span::before {
 	content: "";
 
 	position: absolute;
@@ -1804,7 +1804,7 @@ form {
 
 	z-index: 1;
 }
-.price p::after {
+.price span::after {
 	content: "";
 
 	position: absolute;
@@ -2138,11 +2138,6 @@ form {
 }
 
 
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .write-us .form-container{
 	display: flex;
 	justify-content: space-between;
@@ -2163,7 +2158,8 @@ form {
 	margin-bottom: 0;
 }
 .form-write-us label{
-	
+	display: block;
+
 	font-size: 18px;
 	line-height: 18px;
 }
@@ -2366,12 +2362,16 @@ form {
 	margin: 0;
 	border: 0;
 
-	cursor: pointer;
+	text-decoration: none;
 
-	outline: none;
+	cursor: pointer;
 }
 .modal-show {
   display: block;
   
   animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

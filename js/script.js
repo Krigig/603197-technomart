@@ -4,16 +4,17 @@
  var popup = document.querySelector(".write-us");
  var close = popup.querySelector(".modal-close");
 
-var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=name]");
-  var email = popup.querySelector("[name=e-mail]");
+var form = popup.querySelector(".form-write-us");
+
+var login = popup.querySelector("[name=login]");
+var email = popup.querySelector("[name=e-mail]");
+
   
   var isStorageSupport = true;
   var storage = "";
 
-
- try {
-    storage = localStorage.getItem("name");
+  try {
+    storage = localStorage.getItem("login");
   } catch (err) {
     isStorageSupport = false;
   }
@@ -23,29 +24,28 @@ var form = popup.querySelector("form");
     popup.classList.add("modal-show");
     
     if (storage) {
-      name.value = storage;
+      login.value = storage;
       email.focus();
     } else {
-      name.focus();
+      login.focus();
     }
   });
- 
+  
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
     popup.classList.remove("modal-error");
   });
-
   
   form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
+    if (!login.value || !email.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
+        localStorage.setItem("login", login.value);
       }
     }
   });
@@ -59,6 +59,15 @@ var form = popup.querySelector("form");
       }
     }
   });
+ 
+   
+
+
+
+
+
+
+
 
    var mapLink = document.querySelector(".button-map");
 

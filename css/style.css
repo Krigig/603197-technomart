@@ -753,13 +753,13 @@ form {
 	-ms-flex-align: center;
 	   align-items: center;
 	width: 195px;
-	min-height: 38px;
+	height: 38px;
 }
 
 .topic {
 	margin: 0;
 	padding: 0;
-	min-height: 89px;
+	height: 89px;
 
 	display: -ms-flexbox;
 	display: flex;

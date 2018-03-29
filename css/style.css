@@ -107,7 +107,9 @@ a {
 	min-height: 42px;
 	padding-left: 48px;
 
-	font: inherit;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;
+    line-height: 18px;
 	background-color: #293449;
 	border: none;
 }
@@ -117,10 +119,10 @@ a {
     line-height: 18px;
 	color: #fff;
 }
-.search:-moz-placeholder { 
-	font-size: 17px;
-    line-height: 18px;
+.search::-moz-placeholder { 
+
 	color: #fff;
+	opacity: 1;
 }
 
 .buy .marker::before {
@@ -807,7 +809,9 @@ form {
 	font-size: 18px;
 	line-height: 20px;
 }
-
+.catalog-items .item-name {
+	display: block;
+}
 .catalog-items del {
 	text-align: center;
 	font-size: 17px;
@@ -1012,6 +1016,8 @@ form {
 
 .service p {
 	margin: 0;
+	width: 403px;
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -1409,6 +1415,10 @@ form {
 	width: 275px;
 }
 
+.bottom-footer .sub {
+	display: block;
+}
+
 .footer-social {
 	display: flex;
 	width: 134px;
@@ -1451,6 +1461,8 @@ form {
 	margin-right: 13px;
 }
 .footer-copyright a {
+	display: block;
+
 	color:#ffd180;
 }
 
@@ -1882,6 +1894,7 @@ form {
 	background-color: transparent;
 
 	z-index: 1;
+	cursor: pointer;
 }
 
 .price span::after {
@@ -1900,6 +1913,7 @@ form {
 	background-color: transparent;
 
 	z-index: 1;
+	cursor: pointer;
 }
 
 .price-option-inputs {
@@ -2280,7 +2294,18 @@ form {
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 }
-
+.form-write-us::-webkit-input-placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
+.form-write-us::-moz-placeholder { 
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+}
 .form-write-us textarea {
 	display: block;
 	resize: none;

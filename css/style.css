@@ -16,7 +16,7 @@ a {
 
 .top-header-wrapper{
 	background-color: #293449;
-	min-height: 42px;
+	height: 42px;
 	width: 100%;	
 }
 
@@ -34,7 +34,6 @@ a {
 		flex-wrap: wrap;
 	justify-content: space-between;
 
-	height: 47px;
 	background-color: #293449;
 }
 
@@ -322,7 +321,6 @@ form {
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-
 	width: 282px;
 	min-height: 47px;
 }
@@ -399,7 +397,8 @@ form {
 	margin: 0;
 	margin-top: 16px;
 	margin-bottom: 16px;
-	height: 61px;
+	width: 100%;
+	min-height: 61px;
 	
 	display: -ms-flexbox;
 	display: flex;
@@ -1558,7 +1557,7 @@ form {
 		flex-wrap: wrap;
 	
 	width: 299px;
-	min-height: 45px;
+	height: 45px;
 }
 
 .user .user-name,
@@ -1722,7 +1721,7 @@ form {
 }
 
 .header-sorting {
-	min-height: 38px;
+	height: 38px;
 	
 	display: -ms-flexbox;
 	display: flex;

@@ -38,6 +38,7 @@ a {
 	margin: 0;
 	display: inline-block;
 	width: 220px;
+	height: 47px;
 	box-sizing: border-box;
 	padding-top: 12px;
 	padding-left: 55px;
@@ -394,7 +395,7 @@ form {
 	margin: 0;
 	margin-top: 16px;
 	margin-bottom: 16px;
-	min-height: 61px;
+	height: 61px;
 	
 	display: -ms-flexbox;
 	display: flex;

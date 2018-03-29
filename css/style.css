@@ -28,10 +28,14 @@ a {
 
 .top-header {
 	margin-bottom: -5px;
+	display: -ms-flexbox;
 	display: flex;
-	min-height: 47px;
-	background-color: #293449;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	justify-content: space-between;
+
+	height: 47px;
+	background-color: #293449;
 }
 
 .main-header-logo {
@@ -73,7 +77,7 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+		flex-wrap: wrap;
 	width:720px;
 }
 

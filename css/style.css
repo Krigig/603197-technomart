@@ -112,6 +112,7 @@ a {
 	margin: 0;
 	width: 270px;
 	min-height: 42px;
+	box-sizing: border-box;
 	padding-left: 48px;
 
 	font-family: "Cuprum", Arial, sans-serif;

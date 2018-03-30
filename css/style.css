@@ -27,7 +27,7 @@ a {
 }
 
 .top-header {
-	margin-bottom: -5px;
+	
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -41,19 +41,32 @@ a {
 	margin: 0;
 	display: inline-block;
 	width: 220px;
-	height: 47px;
+	position: relative;
+
 	box-sizing: border-box;
 	padding-top: 12px;
 	padding-left: 55px;
-	box-shadow: inset 0 1px 0 0 #ea515c,
+	/*box-shadow: inset 0 1px 0 0 #ea515c,
 				inset 0 -5px 0 0 #9f0617;
-	
+	*/
 	vertical-align: middle;
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #ee3643;
+}
+.main-header-logo::after{
+	content: "";
+	
+	position: absolute;
+	top: 42px;
+	left: 0;
+
+	width: 220px;
+	height: 5px;
+
+	background-color: #9f0617;
 }
 
 .main-header-logo:hover{

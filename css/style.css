@@ -131,7 +131,7 @@ a {
 	opacity: 1;
 }
 
-.search::-ms-input-placeholder{
+.search:-ms-input-placeholder{
 	color: #fff;
 	opacity: 1;
 }

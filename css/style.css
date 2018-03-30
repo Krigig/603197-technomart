@@ -16,7 +16,7 @@ a {
 
 .top-header-wrapper{
 	background-color: #293449;
-	height: 42px;
+	min-height: 42px;
 	width: 100%;	
 }
 
@@ -27,6 +27,7 @@ a {
 }
 
 .top-header {
+	min-height: 47px;
 	margin-bottom: -5px;
 	display: -ms-flexbox;
 	display: flex;
@@ -398,7 +399,7 @@ form {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	width: 100%;
-	min-height: 61px;
+	height: 61px;
 	
 	display: -ms-flexbox;
 	display: flex;
@@ -424,7 +425,7 @@ form {
 }
 
 .site-navigation .last {
-	padding-right: 53px;
+	padding-right: 51px;
 }
 
 .site-navigation a:hover {
@@ -1630,7 +1631,7 @@ form {
 	padding: 0;
 	margin:0;
 	width: 353px;
-	min-height: 59px;
+	height: 59px;
 
 	display: -ms-flexbox;
 	display: flex;
@@ -2183,7 +2184,7 @@ form {
 .paginator a {
 	display: flex;
 	width: 36px;
-	min-height: 36px;
+	height: 36px;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;

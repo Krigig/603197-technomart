@@ -244,6 +244,7 @@ form {
 .checkout a:hover {
 	background-color: #5fbb2d;
 }
+
 .checkout a:focus {
 	color: rgba(255, 255, 255, 0.5);
 	background-color: #518534;
@@ -268,7 +269,7 @@ form {
 }
 
 .bottom-header .promo {
-	margin:0;
+	margin: 0;
 	padding: 0;
 	padding-top: 2px;
 	padding-left: 52px;
@@ -293,7 +294,7 @@ form {
 
 	position: relative;
 
-	border:3px solid #fff;
+	border: 3px solid #fff;
 	color: #ee3643;
 	font-size: 21px;
 	line-height: 21px;
@@ -308,7 +309,7 @@ form {
 	content: "";
 	
 	position: absolute;
-	top:10px;
+	top: 10px;
 	left: 12px;
 
 	width: 20px;
@@ -322,7 +323,7 @@ form {
 }
 
 .bottom-header .adress {
-	margin:0;
+	margin: 0;
 	margin-left: 10px;
 	
 	font-size: 14px;
@@ -331,7 +332,7 @@ form {
 }
 
 .user-navigation {
-	margin:0;
+	margin: 0;
 	padding: 0;
 	
 
@@ -368,7 +369,7 @@ form {
 	content: "";
 	
 	position: absolute;
-	top:13px;
+	top: 13px;
 	left: 14px;
 
 	width: 22px;
@@ -417,7 +418,6 @@ form {
 	margin-bottom: 16px;
 	height: 61px;
 	
-
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
@@ -455,8 +455,8 @@ form {
 }
 
 .features-items {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	margin-top: 60px;
 	margin-bottom: 14px; 
 	list-style: none;
@@ -481,7 +481,7 @@ form {
 
 .features-items h3 {
 	padding: 0;
-	margin:0;
+	margin: 0;
 	padding-left: 23px;
 	padding-top: 22px;
 
@@ -823,7 +823,7 @@ form {
 .catalog-items {
 	margin: 0;
 	margin-top: 20px;
-	padding:0px;
+	padding: 0px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -844,7 +844,7 @@ form {
 }
 
 .catalog-items h3 {
-	margin:0;
+	margin: 0;
 	margin-top: 35px;
 	margin-bottom: 10px;
 	font-size: 18px;
@@ -1047,8 +1047,8 @@ form {
 }
 
 .service h2 {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	padding-top: 66px;
 	padding-bottom: 27px;
 	
@@ -1262,7 +1262,7 @@ form {
 }
 
 .about h2 {
-	margin:0;
+	margin: 0;
 	margin-bottom: 26px;
 	
 	font-size: 30px;
@@ -1410,7 +1410,6 @@ form {
 }
 
 .main-footer .bottom-navigation {
-	
 	width: 548px;
 }
 
@@ -1455,7 +1454,7 @@ form {
 }
 
 .bottom-footer p {
-	margin:0;
+	margin: 0;
 	width: 275px;
 }
 
@@ -1504,6 +1503,7 @@ form {
 	justify-content: space-between;
 	margin-right: 13px;
 }
+
 .footer-copyright a {
 	display: block;
 
@@ -1548,7 +1548,6 @@ form {
 .btn:focus {
 	background-color: #ba2732;
 }
-
 
 /* стили для каталога */
 
@@ -1649,7 +1648,7 @@ form {
 
 .catalog-nav {
 	padding: 0;
-	margin:0;
+	margin: 0;
 	width: 353px;
 	height: 59px;
 
@@ -1684,7 +1683,6 @@ form {
 	right: -22px;
 	top: 5px;
 	
-
 	width: 8px;
 	height: 15px;
 
@@ -1704,7 +1702,7 @@ form {
 .catalog h2 {
 	margin: 0;
 	margin-bottom: 20px;
-	padding-left:28px;
+	padding-left: 28px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 
@@ -1734,7 +1732,7 @@ form {
 .name-main-filter {
 	width: 220px;
 	min-height: 38px;
-	background-color:#f7f3ec; 
+	background-color: #f7f3ec; 
 }
 
 .name-main-filter p {
@@ -1803,7 +1801,7 @@ form {
 }
 
 .sorting-btn {
-	margin:0;
+	margin: 0;
 	padding: 0;
 	padding-right: 2px;
 	font-size: 0;
@@ -1846,8 +1844,8 @@ form {
 
 .catalog-items-group .catalog-items {
 	width: 700px;
-	margin-top:20px;
-	padding:0px;
+	margin-top: 20px;
+	padding: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1922,7 +1920,7 @@ form {
 }
 
 .price span {
-	margin:0;
+	margin: 0;
 	padding: 0;
 	width: 100%;
 }
@@ -2010,7 +2008,6 @@ form {
 	left: 105px;
 	bottom: 43px;
 	
-
 	width: 9px;
 	height: 1px;
 
@@ -2203,7 +2200,7 @@ form {
 	display: flex;
 	width: 285px;
 	justify-content: space-between;
-	margin:0;
+	margin: 0;
 	padding: 0;
 	margin-top: 30px;
 }
@@ -2216,12 +2213,10 @@ form {
 	align-items: center;
 	flex-wrap: wrap;
 
-
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
-
 
 	color: #000000;
 	background-color: #ffffff;
@@ -2253,13 +2248,13 @@ form {
 }
 
 .product {
-	margin-top:60px;
+	margin-top: 60px;
 	padding: 65px 0;
 	padding-bottom: 68px;
 }
 
 .product h2 {
-	margin:0;
+	margin: 0;
 	padding-bottom: 25px;
 	font-size: 30px;
 	line-height: 30px;
@@ -2270,7 +2265,6 @@ form {
 .product p {
 	margin: 0;
 	padding: 0;
-
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
@@ -2369,18 +2363,21 @@ form {
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
 }
+
 .form-write-us::-webkit-input-placeholder {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #999999;
 }
+
 .form-write-us::-moz-placeholder { 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #999999;
 }
+
 .form-write-us textarea {
 	display: block;
 	resize: none;
